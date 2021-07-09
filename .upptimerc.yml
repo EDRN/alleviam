@@ -66,11 +66,15 @@ sites:
     -
         name: 🎪 EDRN Cancer Data Expo
         url: https://edrn.jpl.nasa.gov/cancerdataexpo/
+        # JPL can't issue good certificates:
+        __dangerous__disable_verify_peer: true
         assignees:
             - nutjob4life
     -
         name: 💁‍♀️ EDRN β Portal
         url: https://edrn.jpl.nasa.gov/portal/
+        # JPL can't issue good certificates:
+        __dangerous__disable_verify_peer: true
         assignees:
             - nutjob4life
     -
