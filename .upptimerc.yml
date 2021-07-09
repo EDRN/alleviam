@@ -69,7 +69,7 @@ sites:
         assignees:
             - nutjob4life
     -
-        name: 💁‍♀️ EDRN Demo Portal
+        name: 💁‍♀️ EDRN β Portal
         url: https://edrn.jpl.nasa.gov/portal/
         assignees:
             - nutjob4life
@@ -112,6 +112,12 @@ sites:
         assignees:
             - nutjob4life
             - yuliujpl
+    -
+        name: 💁‍♀️ MCL β Portal
+        url: https://mcl.jpl.nasa.gov/portal/
+        assignees:
+            - nutjob4life
+
 
 status-website:
     # We do not have a custom domain, so leave `cname` blank:
@@ -132,7 +138,7 @@ status-website:
     navbar:
         -
             title: Status
-            href: /
+            href: /alleviam
         -
             title: GitHub
             href: https://github.com/$OWNER/$REPO
