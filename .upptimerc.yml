@@ -5,13 +5,43 @@ repo: alleviam
 
 sites:
     -
+        # We don't have a way to do ldaps: queries but we can use a service that requires LDAP
+        # authorization. The MCL_BASIC_AUTH is the Base64 encoded HTTP Basic auth header
+        # for the MCL service account.
+        name: ℹ️ Directory Service
+        url: https://mcl.jpl.nasa.gov/infirmary/v2/organs/1
+        headers:
+            - "Content-Type: application/json"
+            - "Authorization: Basic $MCL_BASIC_AUTH"
+    -
+        name: 🏥 DMCC SOAP Service
+        url: https://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx?WSDL
+        headers:
+            - "Content-Type: text/xml; charset=utf-8"
+            - "SOAPAction: \"http://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx/Disease\""
+        body: >
+            <?xml version="1.0" encoding="utf-8"?>
+            <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+                <soap:Body>
+                    <Disease xmlns="http://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx">
+                        <verificationNum>0</verificationNum>
+                    </Disease>
+                </soap:Body>
+            </soap:Envelope>
+    -
         name: 🚪 EDRN Portal
         url: https://edrn.nci.nih.gov/
     -
         name: 🔬 EDRN LabCAS
         url: https://edrn-labcas.jpl.nasa.gov/
     -
-        name: 🧬 Focus Biomarker Database
+        name: 🎪 EDRN Cancer Data Expo
+        url: https://edrn.jpl.nasa.gov/cancerdataexpo
+    -
+        name: 💁‍♀️ EDRN Demo Portal
+        url: https://edrn.jpl.nasa.gov/portal
+    -
+        name: 🧬 EDRN Focus Biomarker Database
         url: https://bmdb.jpl.nasa.gov/
     -
         name: 🚪 MCL Portal
@@ -19,6 +49,15 @@ sites:
     -
         name: 🔬 MCL LabCAS
         url: https://mcl-labcas.jpl.nasa.gov/
+    -
+        name: 📚 MCL Knowledge System Database
+        url: https://mcl.jpl.nasa.gov/ksdb/
+    -
+        name: 👩‍⚕️ Infirmary Clinical Data API (v1)
+        url: https://mcl.jpl.nasa.gov/infirmary/v1/ping
+    -
+        name: 👩‍⚕️ Infirmary Clinical Data API (v2)
+        url: https://mcl.jpl.nasa.gov/infirmary/v2/ping
 
 status-website:
     # We do not have a custom domain, so leave `cname` blank:
