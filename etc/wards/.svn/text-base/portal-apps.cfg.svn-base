@@ -1,0 +1,23 @@
+# Copyright 2010 California Institute of Technology. ALL RIGHTS
+# RESERVED. U.S. Government Sponsorship acknowledged.
+#
+# Ward: Portal Host Applications
+# ******************************
+#
+# End-to-end tests of EDRN applications on the portal host.
+
+# Portal
+# ======
+#
+# The actual public face of EDRN. Now you're thinking with portals.
+check host edrn.nci.nih.gov-portal with address edrn.nci.nih.gov
+    if failed url
+        http://edrn.nci.nih.gov/
+        and content == "Welcome to EDRN!"
+        with timeout 20 seconds for 3 cycles
+        then alert
+    if failed url
+        https://edrn.nci.nih.gov/
+        and content == "Welcome to EDRN!"
+        with timeout 60 seconds for 5 cycles
+        then alert

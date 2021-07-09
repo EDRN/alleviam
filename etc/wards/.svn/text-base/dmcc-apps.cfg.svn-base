@@ -1,0 +1,53 @@
+# Copyright 2010 California Institute of Technology. ALL RIGHTS
+# RESERVED. U.S. Government Sponsorship acknowledged.
+#
+# Ward: DMCC Applications
+# ***********************
+#
+# End-to-end tests of applications and checks of services run at EDRN's Data Management and Coordinating Center.
+
+check host DMCC-ginger.fhcrc.org with address ginger.fhcrc.org
+    # Host up
+    if failed icmp type echo count 5 with timeout 20 seconds for 5 cycles then alert
+    # Apache HTTPD serving http
+    if failed port 80 type tcp protocol http with timeout 30 seconds then alert
+    # Apache Tomcat serving https
+    if failed port 443 type tcpssl
+        certmd5 A9AF3D463CA3FDFAB5C84F37FAA527A6
+        protocol http with timeout 40 seconds then alert
+    # XML-RPC Proxy
+    if failed port 7575 type tcp
+        send "GET /RPC2 HTTP/1.0\r\n\r\n"
+        expect "HTTP/1.0 400 Bad Request"
+        with timeout 20 seconds for 3 cycles
+        then alert
+    # Server Manager
+    if failed port 7577 type tcp
+        send "GET /RPC2 HTTP/1.0\r\n\r\n"
+        expect "HTTP/1.0 400 Bad Request"
+        with timeout 20 seconds for 3 cycles
+        then alert
+    # DMCC App Server (providing RDF service etc.)
+    if failed url
+        http://ginger.fhcrc.org/dmcc
+        and content == "Welcome to EDRN DMCC Application Server"
+        with timeout 20 seconds for 3 cycles
+        then alert
+    # ERNE Cache Control Panel (should be integrated with DMCC App Server above someday)
+    if failed url
+        http://ginger.fhcrc.org/edrn/erne-caches
+        and content == "ERNE Caches"
+        with timeout 20 seconds for 3 cycles
+        then alert
+    # ERNE QA powered by Nagios
+    if failed url
+        http://nagiosadmin:Squamm0us@ginger.fhcrc.org/nagios/
+        and content == "Nagios"
+        with timeout 20 seconds for 3 cycles
+        then alert
+    # ERNE UI
+    if failed url
+        https://ginger.fhcrc.org/edrn/imp/GateServlet
+        and content == "EDRN Resource Network Exchange"
+        with timeout 30 seconds for 3 cycles
+        then alert

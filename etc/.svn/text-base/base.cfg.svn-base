@@ -1,0 +1,30 @@
+# Copyright 2010 California Institute of Technology. ALL RIGHTS
+# RESERVED. U.S. Government Sponsorship acknowledged.
+#
+# Base configuration for the Alleviam master, cancer.jpl.nasa.gov.
+
+[buildout]
+extensions = buildout.dumppickedversions
+dump-picked-versions-file = versions/known-good.cfg
+newest = false
+versions = versions
+extends =
+    build.cfg
+    ../versions/externals.cfg
+parts =
+    monit
+    alleviam-config
+    httpd-config
+    xdv-compile
+    rc-init
+
+[paths]
+apxs = /usr/local/apache2/bin/apxs
+modules = /usr/local/apache2/modules
+
+[ports]
+monit = 31967
+
+[versions]
+zc.buildout = 1.5.0b2
+

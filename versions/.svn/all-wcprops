@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/repo/!svn/ver/6922/ic/alleviam/trunk/versions
+END
+known-good.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repo/!svn/ver/6910/ic/alleviam/trunk/versions/known-good.cfg
+END
+externals.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repo/!svn/ver/6919/ic/alleviam/trunk/versions/externals.cfg
+END

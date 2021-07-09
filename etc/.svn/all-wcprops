@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repo/!svn/ver/7049/ic/alleviam/trunk/etc
+END
+httpd.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repo/!svn/ver/6923/ic/alleviam/trunk/etc/httpd.cfg
+END
+alleviam.htpasswd
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repo/!svn/ver/7047/ic/alleviam/trunk/etc/alleviam.htpasswd
+END
+alleviam.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repo/!svn/ver/7048/ic/alleviam/trunk/etc/alleviam.cfg
+END
+base.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repo/!svn/ver/6918/ic/alleviam/trunk/etc/base.cfg
+END
+cancer-ldap.pem
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repo/!svn/ver/6910/ic/alleviam/trunk/etc/cancer-ldap.pem
+END
+rules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repo/!svn/ver/6910/ic/alleviam/trunk/etc/rules.xml
+END
+build.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repo/!svn/ver/6939/ic/alleviam/trunk/etc/build.cfg
+END

@@ -1,0 +1,336 @@
+# Copyright 2010 California Institute of Technology. ALL RIGHTS
+# RESERVED. U.S. Government Sponsorship acknowledged.
+#
+# Ward: Informatics Center Operations (cancer.jpl.nasa.gov)
+# *********************************************************
+
+# Software Components
+# ===================
+#
+# Components developed by the Informatics Center and adapted from 3rd parties.
+
+# Demo Portal App Server
+# ----------------------
+#
+# Zope application server that runs the demo of the EDRN public portal.
+check process demoportal-zope
+    with pidfile "/usr/local/edrn.nci.nih.gov/current/var/instance-debug.pid"
+    start program = "/usr/local/edrn.nci.nih.gov/current/bin/supervisorctl start instance"
+    stop program = "/usr/local/edrn.nci.nih.gov/current/bin/supervisorctl stop instance"
+    if totalcpu > 80% for 3 cycles then alert
+    if totalcpu > 95% for 5 cycles then restart
+    if failed port 9905 type tcp protocol http with timeout 15 seconds for 3 cycles then restart
+    if 3 restarts within 5 cycles then timeout
+    depends on demoportal-zeo, demoportal-supervisor, usr-fs
+
+# Demo Portal Database
+# --------------------
+#
+# ZEO database providing persistence for the demo of the EDRN public portal's app server.
+check process demoportal-zeo
+    with pidfile "/usr/local/edrn.nci.nih.gov/current/var/zeoserver.pid"
+    start program = "/usr/local/edrn.nci.nih.gov/current/bin/supervisorctl start zeo"
+    stop program = "/usr/local/edrn.nci.nih.gov/current/bin/supervisorctl stop zeo"
+    if totalcpu > 80% for 3 cycles then alert
+    if totalcpu > 95% for 5 cycles then restart
+    if failed port 9906 type tcp then restart
+    if 3 restarts within 5 cycles then timeout
+    depends on demoportal-supervisor, usr-fs
+
+# Demo Portal Supervisor
+# ----------------------
+#
+# Supervisord manages the processes that comprise the EDRN demo portal.
+check process demoportal-supervisor
+    with pidfile "/usr/local/edrn.nci.nih.gov/current/var/supervisord.pid"
+    start program = "/usr/local/edrn.nci.nih.gov/current/bin/supervisord"
+    stop program = "/usr/local/edrn.nci.nih.gov/current/bin/supervisorctl shutdown"
+    if cpu > 85% for 3 cycles then alert
+    if cpu > 95% for 5 cycles then restart
+    if failed url
+        http://supervisor-admin:password@localhost:9907/
+        and content == "Supervisor Status"
+        then restart
+    if 3 restarts within 5 cycles then timeout
+    depends on usr-fs
+
+# Biomarker Atlas File Manager
+# ----------------------------
+check process biomarkeratlas-filemgr
+    with pidfile "/usr/local/ecas/run/cas.filemgr.pid"
+    start program = "/usr/local/biomarker-atlas/uchsc/filemgr/bin/filemgr start" with timeout 60 seconds
+    stop program = "/usr/local/biomarker-atlas/uchsc/filemgr/bin/filemgr stop"
+    if totalcpu > 70% for 3 cycles then alert
+    if totalcpu > 95% for 5 cycles then restart
+    if failed port 9010 type tcp
+        send "GET /RPC2 HTTP/1.0\r\n\r\n"
+        expect "HTTP/1.0 400 Bad Request"
+        then restart
+    if 3 restarts within 5 cycles then timeout
+    depends on biomarkeratlas-filemgr.properties, usr-fs
+check file biomarkeratlas-filemgr.properties
+    with path "/usr/local/biomarker-atlas/uchsc/filemgr/etc/filemgr.properties"
+    if changed md5 checksum then exec "/usr/local/biomarker-atlas/uchsc/filemgr/bin/filemgr restart"
+
+# ECAS File Manager
+# -----------------
+check process ecas-filemgr
+    with pidfile "/usr/local/ecas/run/cas.filemgr.pid"
+    start program = "/usr/local/ecas/filemgr/bin/filemgr start" with timeout 60 seconds
+    stop program = "/usr/local/ecas/filemgr/bin/filemgr stop"
+    if totalcpu > 70% for 3 cycles then alert
+    if totalcpu > 95% for 5 cycles then restart
+    if failed port 9000 type tcp
+        send "GET /RPC2 HTTP/1.0\r\n\r\n"
+        expect "HTTP/1.0 400 Bad Request"
+        then restart
+    if 3 restarts within 5 cycles then timeout
+    depends on ecas-filemgr.properties, usr-fs
+check file ecas-filemgr.properties
+    with path "/usr/local/ecas/filemgr/etc/filemgr.properties"
+    if changed md5 checksum then exec "/usr/local/ecas/filemgr/bin/filemgr restart"
+
+# Cancer Zope
+# -----------
+#
+# Zope application server for Informatic Center's public website.
+check process cancerzope
+    with pidfile "/usr/local/zope/sites/cancer.jpl.nasa.gov/var/primary.pid"
+    start program = "/etc/init.d/cancerzope start"
+    stop program = "/etc/init.d/cancerzope stop"
+    if totalcpu > 80% for 3 cycles then alert
+    if totalcpu > 95% for 5 cycles then restart
+    if failed port 8104 type tcp protocol http with timeout 15 seconds for 3 cycles then restart
+    if 3 restarts within 5 cycles then timeout
+    depends on cancerzeo, usr-fs
+
+# Cancer ZEO
+# ----------
+#
+# ZEO database for the Informatics Center's public website.
+check process cancerzeo
+    with pidfile "/usr/local/zope/sites/cancer.jpl.nasa.gov/var/zeoserver.pid"
+    start program = "/etc/init.d/cancerzeo start"
+    stop program = "/etc/init.d/cancerzeo stop"
+    if totalcpu > 80% for 3 cycles then alert
+    if totalcpu > 95% for 5 cycles then restart
+    if failed port 8105 type tcp then restart
+    if 3 restarts within 5 cycles then timeout
+    depends on usr-fs
+
+# Tomcat
+# ------
+#
+# A couple of web apps are Java based.
+check process tomcat
+    with pidfile "/usr/local/tomcat/logs/tomcat.pid"
+    start program = "/usr/local/tomcat/bin/startup.sh"
+    stop program = "/usr/local/tomcat/bin/shutdown.sh"
+    if totalcpu > 70% for 3 cycles then alert
+    if totalcpu > 85% for 5 cycles then restart
+    if failed port 8080 type tcp protocol http with timeout 15 seconds for 3 cycles then restart
+    if 3 restarts within 5 cycles then timeout
+    depends on tomcat-webapps-dir, tomcat-server.xml, usr-fs
+check directory tomcat-webapps-dir
+    with path "/usr/local/tomcat/webapps"
+    if changed timestamp then exec "/usr/local/sbin/restart-tomcat"
+check file tomcat-server.xml
+    with path "/usr/local/tomcat/conf/server.xml"
+    if changed md5 checksum then exec "/usr/local/sbin/restart-tomcat"
+
+# Apache Directory Server
+# -----------------------
+#
+# Because OpenLDAP was far too efficient.
+check process apacheds
+    with pidfile "/var/run/apacheds.pid"
+    start program = "/etc/init.d/apacheds start"
+    stop program = "/etc/init.d/apacheds stop"
+    if totalcpu > 70% for 3 cycles then alert
+    if totalcpu > 85% for 5 cycles then restart
+    if failed port 636 type tcpssl certmd5 D131EBE2F8C08E4BBFFC0AEB380BEB17 protocol ldap3
+        with timeout 30 seconds for 3 cycles then restart
+    if failed port 10389 type tcp protocol ldap3
+        with timeout 15 seconds for 3 cycles then restart
+    if 3 restarts within 5 cycles then timeout
+    depends on apacheds-server.xml, usr-fs
+check file apacheds-server.xml
+    with path "/usr/local/ldap/conf/server.xml"
+    if changed md5 checksum then exec "/etc/init.d/apacheds restart"
+
+# varnish
+# -------
+#
+# Varnish is the uber-cache that sits in front of HTTPD and talks to the real world.
+check process varnish
+    with pidfile "/var/run/varnishd.pid"
+    start program = "/etc/init.d/varnishd start"
+    stop program = "/etc/init.d/varnishd stop"
+    if totalcpu > 90% for 3 cycles then alert
+    if totalcpu > 96% for 5 cycles then restart
+    if failed port 80 protocol http and request "/" using hostheader "testhost"
+        with timeout 30 seconds for 3 cycles then alert
+    if failed port 8102 type tcp
+        send "quit\r\n"
+        expect "500 22"
+	then restart
+    if 3 restarts within 5 cycles then timeout
+    depends on varnish-binary, varnish.cache, varnish.conf
+check file varnish-binary
+    with path "/usr/local/sbin/varnishd"
+    if failed md5 checksum and expect the sum e0ca7ecd3e7854daeaebcdf26b70cc11 then unmonitor
+    if failed permission 0755 then unmonitor
+    if failed uid "root" then unmonitor
+    if failed gid "root" then unmonitor
+    if changed timestamp then alert
+check file varnish.cache
+    with path "/usr/local/apache2/logs/varnish.cache"
+    if size < 1 megabyte then unmonitor
+check file varnish.conf
+    with path "/usr/local/apache2/conf/varnish.conf"
+    if changed md5 checksum then exec "/etc/init.d/varnishd restart"
+
+# httpd
+# -----
+#
+# The Apache HTTPD server, core component of many of the EDRN applications.
+check process httpd
+    with pidfile "/usr/local/apache2/logs/httpd.pid"
+    start program = "/etc/init.d/httpd start"
+    stop program = "/etc/init.d/httpd stop"
+    if totalcpu > 70% for 2 cycles then alert
+    if totalcpu > 90% for 5 cycles then restart
+    if children > 80 then alert
+    if failed port 8100 protocol apache-status loglimit > 60% then restart
+    if failed port 8100 protocol apache-status dnslimit > 30% or requestlimit > 70% or keepalivelimit > 90% then alert
+    if failed host cancer.jpl.nasa.gov port 443 type tcpssl certmd5 46652D21102890840336BC84454B45A4 protocol http then alert
+    if 3 restarts within 5 cycles then timeout
+    depends on httpd-binary, edrn.conf, usr-fs
+check file httpd-binary
+    with path "/usr/local/apache2/bin/httpd"
+    if failed md5 checksum and expect the sum c7e5d10e9f5a243fc8b2d9d8c08ab26b then unmonitor
+    if failed permission 755 then unmonitor
+    if failed uid "root" then unmonitor
+    if failed gid "root" then unmonitor
+    if changed timestamp then alert
+check file edrn.conf
+    with path "/usr/local/apache2/conf/edrn.conf"
+    if changed md5 checksum then exec "/etc/init.d/httpd graceful"
+
+# mysql
+# -----
+#
+# Our PHP-based applications use MySQL for persistence.
+check process mysql
+    with pidfile "/data/mysql_data/cancer.jpl.nasa.gov.pid"
+    start program = "/etc/init.d/mysql start"
+    stop program = "/etc/init.d/mysql stop"
+    if totalcpu > 70% for 2 cycles then alert
+    if totalcpu > 90% for 5 cycles then restart
+    if failed port 3306 protocol mysql with timeout 10 seconds for 3 cycles then restart
+    if failed unixsocket /tmp/mysql.sock then restart
+    if 3 restarts within 5 cycles then timeout
+    depends on mysql-binary, my.cnf, data-fs
+check file mysql-binary
+    with path "/usr/local/mysql/libexec/mysqld"
+    if failed md5 checksum and expect the sum 225e70206f09aa935c6fe5a3327b39fb then unmonitor
+    if failed permission 0755 then unmonitor
+    if failed uid "mysql" then unmonitor
+    if failed gid "mysql" then unmonitor
+    if changed timestamp then alert
+check file my.cnf
+    with path "/etc/my.cnf"
+    if changed md5 checksum then exec "/etc/init.d/mysql reload"
+
+# sendmail
+# --------
+#
+# The EDRN demo portal (as well as Alleviam itself) needs to be able to send email messages.
+check process sendmail
+    with pidfile "/var/run/sendmail.pid"
+    start program = "/etc/init.d/sendmail start"
+    stop program = "/etc/init.d/sendmail stop"
+    if failed port 25 protocol smtp with timeout 5 seconds for 3 cycles then restart
+    depends on sendmail-binary, sendmail.cf, var-fs
+check file sendmail-binary
+    with path "/usr/sbin/sendmail.sendmail"
+    if failed md5 checksum and expect the sum 9d3e6723c801e9fb5b75e55d2d15d578 then unmonitor
+    if failed permission 2755 then unmonitor
+    if failed uid "root" then unmonitor
+    if changed timestamp then alert
+check file sendmail.cf
+    with path "/etc/mail/sendmail.cf"
+    if failed md5 checksum and expect the sum 9a0d752df53e7c3c9b8c0288d2b201d3 then unmonitor
+
+# sshd
+# ----
+#
+# If we can't log in, we can't fix anything.
+check process sshd
+    with pidfile "/var/run/sshd.pid"
+    start program = "/etc/init.d/sshd start"
+    stop program = "/etc/init.d/sshd stop"
+    if failed port 22 protocol ssh with timeout 10 seconds for 3 cycles then restart
+    depends on sshd-binary, var-fs
+check file sshd-binary
+    with path "/usr/local/sbin/sshd"
+    if failed md5 checksum and expect the sum 4381511915714c45963b5f074e825df7 then unmonitor
+    if failed uid "root" then unmonitor
+    if failed gid "root" then unmonitor
+    if failed permission 0755 then unmonitor
+    if changed timestamp then alert
+
+
+# Filesystems
+# ===========
+#
+# Our applications (as well as the system services they depend on) rely on free disk space.
+# This section specifies those filesystems.
+
+# /usr - /dev/sdb2
+# ----------------
+#
+# Most of the EDRN applications log to and create other artifacts on /usr.
+check filesystem usr-fs
+    with path "/dev/sdb2"
+    if changed fsflags then alert
+    if space usage > 80% for 5 times within 15 cycles then alert
+        else if succeeded for 10 cycles then alert
+    if inode usage > 90% for 5 times within 10 cycles then alert
+        else if succeeded for 20 cycles then alert
+
+# /data - /dev/sda2
+# -----------------
+#
+# Some of the EDRN apps use MySQL, which makes databases under /data.
+check filesystem data-fs
+    with path "/dev/sda2"
+    if changed fsflags then alert
+    if space usage > 60% for 5 times within 15 cycles then alert
+        else if succeeded for 10 cycles then alert
+    if inode usage > 80% for 5 times within 10 cycles then alert
+        else if succeeded for 20 cycles then alert
+
+# /var - /dev/sdb6
+# ----------------
+#
+# Many OS-provided services use /var for persistence.
+check filesystem var-fs
+    with path "/dev/sdb6"
+    if changed fsflags then alert
+    if space usage > 80% for 5 times within 15 cycles then alert
+        else if succeeded for 10 cycles then alert
+    if inode usage > 90% for 5 times within 10 cycles then alert
+        else if succeeded for 20 cycles then alert
+
+
+# Operating System
+# ================
+#
+# Checks for the operating system and core hardware of cancer.jpl.nasa.gov.
+check system cancer.jpl.nasa.gov
+    if loadavg (5min) > 2.5 then alert
+    if loadavg (15min) > 1.0 then alert
+    if cpu usage (user) > 75% then alert
+    if memory usage > 90% then alert
+    if memory usage > 97% then exec "/usr/bin/killall java"
