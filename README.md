@@ -10,7 +10,7 @@ You can then view the results at https://edrn.github.io/alleviam/ (powered by [G
 
 As systems go down, [issues are automatically filed and assigned](https://github.com/EDRN/alleviam/issues) (powered by [GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)).
 
-Email notifications are set up, but haven't been tested. Future notification options such as text messages should be explored later.
+Email notifications are set up for a single user (Sean Kelly) until testing is complete. Future notification options such as text messages should be explored later.
 
 ### 🤫 Secrets
 
