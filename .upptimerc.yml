@@ -64,7 +64,7 @@ status-website:
     # cname:
     # We do not have a custom domain, so we need this `baseUrl`:
     baseUrl: /alleviam
-    logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+    logoUrl: https://raw.githubusercontent.com/EDRN/alleviam/master/assets/alleviam-logo.svg
     name: Alleviam
     introTitle: "**Alleviam** is the EDRN alleviation and monitoring system."
     introMessage: The status of the Early Detection Research Network (and related projects, including the Consortium for Molecular and Cellular Characterization of Screen-Detected Lesions) is presented below.
