@@ -125,7 +125,8 @@ status-website:
         The status of the Early Detection Research Network (and related projects, including the Consortium for
         Molecular and Cellular Characterization of Screen-Detected Lesions) is presented below. (Icon courtesy
         of Freepik.com.)
-    theme: ocean
+    # The `dark` theme looks like freakin' xmas and the `ocean` theme is too patriotic
+    theme: light
     skipDescriptionUpdate: true
     skipTopicsUpdate: true
     navbar:
@@ -135,9 +136,5 @@ status-website:
         -
             title: GitHub
             href: https://github.com/$OWNER/$REPO
-
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
 
 ...
