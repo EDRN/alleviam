@@ -9,7 +9,7 @@ sites:
         # authorization. The MCL_BASIC_AUTH is the Base64 encoded HTTP Basic auth header
         # for the MCL service account.
         name: ℹ️ Directory Service
-        url: https://mcl.jpl.nasa.gov/infirmary/v2/organs/1
+        url: https://mcl.jpl.nasa.gov/infirmary/v2/hello/world
         headers:
             - "Content-Type: application/json"
             - "Authorization: Basic $MCL_BASIC_AUTH"
