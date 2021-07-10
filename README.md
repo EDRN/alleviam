@@ -2,6 +2,7 @@
 
 This is Alleviam, the Early Detection Research Network [EDRN](https://edrn.nci.nih.gov/) alleviation and monitoring system. Alleviam keeps tabs on essential informatics services, files tickets when things are not copacetic, and keeps the EDRN (and related projects) up and running as much as possible.
 
+
 ## 🏃‍♀️ Getting Started
 
 Check the documentation for [Upptime](https://upptime.js.org/) first. Then do a `git pull` because the [GitHub Actions](https://github.com/features/actions) that powers this make numerous commits to the repository. Then edit the `.upptimerc.yml` file and commit and push.
@@ -11,6 +12,7 @@ You can then view the results at https://edrn.github.io/alleviam/ (powered by [G
 As systems go down, [issues are automatically filed and assigned](https://github.com/EDRN/alleviam/issues) (powered by [GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)).
 
 Email notifications are set up for a single user (Sean Kelly) until testing is complete. Future notification options such as text messages should be explored later.
+
 
 ### 🤫 Secrets
 
@@ -29,17 +31,16 @@ The following [repository secrets](https://github.com/EDRN/alleviam/settings/sec
   - `NOTIFICATION_EMAIL_SENDGRID`: the value `true` to tell Upptime to use [Sendgrid free account](https://sendgrid.com) for email transmission
   - `NOTIFICATION_EMAIL_SENDGRID_API_KEY`: the API key to a Sendgrid account
 
+
 ## 🖥 The Software
 
 This effort is based on [Upptime](https://upptime.js.org/).
 
-## 🔢 Versioning
-
-We'll use the [SemVer](https://semver.org/) philosophy for versioning of this software.
 
 ## 👥 Contributing
 
 You can always look at [open issues](https://github.com/EDRN/alleviam/issues) and/or make [pull requests](https://github.com/EDRN/alleviam/pulls).
+
 
 ## 📃 License
 
