@@ -139,7 +139,7 @@ status-website:
     # The `dark` theme looks like freakin' xmas and the `ocean` theme is too patriotic
     theme: light
     skipDescriptionUpdate: true
-    skipTopicsUpdate: true
+    skipTopicsUpdate: false
     navbar:
         -
             title: Status
