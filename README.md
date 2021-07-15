@@ -25,7 +25,7 @@ The following [repository secrets](https://github.com/EDRN/alleviam/settings/sec
 - For email notifications:
   - `NOTICATION_EMAIL`: the value `true` to tell Upptime we want emails
   - `NOTICATION_EMAIL_FROM`: a source email address
-  - `NOTIFICATION_EMAIL_TO`: the destination email address to notify; this is currently a single user (Sean Kelly) for testing purposes, but should be set to a group account in the future
+  - `NOTIFICATION_EMAIL_TO`: the destination email address to notify; this goes currently to `edrn-alleviam@jpl.nasa.gov`
   - `NOTIFICATION_EMAIL_SENDGRID`: the value `true` to tell Upptime to use [Sendgrid free account](https://sendgrid.com) for email transmission
   - `NOTIFICATION_EMAIL_SENDGRID_API_KEY`: the API key to a Sendgrid account
 
