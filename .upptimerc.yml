@@ -147,6 +147,7 @@ status-website:
             title: GitHub
             href: https://github.com/$OWNER/$REPO
 
+# Miscellaneous stuff:
 skipDescriptionUpdate: true
 skipTopicsUpdate: true
 
