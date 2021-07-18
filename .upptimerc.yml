@@ -139,8 +139,6 @@ status-website:
         of <a href='https://freepik.com/'>Freepik.com</a>.)
     # The `dark` theme looks like freakin' xmas and the `ocean` theme is too patriotic
     theme: light
-    skipDescriptionUpdate: true
-    skipTopicsUpdate: true
     navbar:
         -
             title: Status
@@ -148,5 +146,8 @@ status-website:
         -
             title: GitHub
             href: https://github.com/$OWNER/$REPO
+
+skipDescriptionUpdate: true
+skipTopicsUpdate: true
 
 ...
