@@ -62,7 +62,6 @@ sites:
         assignees:
             - nutjob4life
             - yuliujpl
-            - LucaCinquini
     -
         name: 🎪 EDRN Cancer Data Expo
         url: https://edrn.jpl.nasa.gov/cancerdataexpo/
@@ -93,7 +92,6 @@ sites:
         assignees:
             - nutjob4life
             - yuliujpl
-            - LucaCinquini
     -
         name: 📚 MCL Knowledge System Database
         url: https://mcl.jpl.nasa.gov/ksdb/
