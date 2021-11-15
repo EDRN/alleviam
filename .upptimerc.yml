@@ -33,6 +33,7 @@ sites:
             </soap:Envelope>
         assignees:
             - nutjob4life
+            - edrn-bot
     -
         name: 🔑 DMCC Password Verification
         url: https://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx?WSDL
