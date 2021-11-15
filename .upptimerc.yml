@@ -15,6 +15,7 @@ sites:
             - "Authorization: Basic $MCL_BASIC_AUTH"
         assignees:
             - nutjob4life
+            - edrn-bot
     -
         name: 🏥 DMCC SOAP Service
         url: https://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx?WSDL
