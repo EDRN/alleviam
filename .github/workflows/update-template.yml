@@ -30,3 +30,4 @@ jobs:
           command: "update-template"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
+
