@@ -132,6 +132,11 @@ sites:
         assignees:
             - nutjob4life
             - yuliujpl
+    -
+        name: 🩺 Test Data
+        url: https://raw.githubusercontent.com/EDRN/test-data/main/etc/passwords.cfg
+        assignees:
+            - nutjob4life
     # We cannot monitor this because it's private to JPL; however if we use a hosted runner we might
     # be able to get around this.
     # -
