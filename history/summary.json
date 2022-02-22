@@ -615,19 +615,19 @@
     "url": "https://raw.githubusercontent.com/EDRN/test-data/main/etc/passwords.cfg",
     "icon": "https://favicons.githubusercontent.com/raw.githubusercontent.com",
     "slug": "test-data",
-    "status": "down",
-    "uptime": "99.96%",
-    "uptimeDay": "98.57%",
-    "uptimeWeek": "99.80%",
-    "uptimeMonth": "99.95%",
-    "uptimeYear": "99.96%",
-    "time": 109,
-    "timeDay": 85,
-    "timeWeek": 107,
+    "status": "up",
+    "uptime": "99.89%",
+    "uptimeDay": "95.78%",
+    "uptimeWeek": "99.40%",
+    "uptimeMonth": "99.86%",
+    "uptimeYear": "99.89%",
+    "time": 108,
+    "timeDay": 87,
+    "timeWeek": 106,
     "timeMonth": 109,
-    "timeYear": 109,
+    "timeYear": 108,
     "dailyMinutesDown": {
-      "2022-02-22": 20
+      "2022-02-22": 61
     }
   }
 ]
