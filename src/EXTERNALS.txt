@@ -1,0 +1,2 @@
+# Created by: svn propset -F ./EXTERNALS.txt svn:externals .
+skin http://tumor.jpl.nasa.gov/repo/edrn/skin/trunk/skin

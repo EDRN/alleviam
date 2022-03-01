@@ -1,0 +1,61 @@
+--- configure.orig	2010-05-31 15:38:08.000000000 -0500
++++ configure	2010-05-31 15:45:35.000000000 -0500
+@@ -10885,14 +10885,7 @@
+ # Find the right directory to put the root-mode PID file in
+ { $as_echo "$as_me:$LINENO: checking pid file location" >&5
+ $as_echo_n "checking pid file location... " >&6; }
+-if test -d "/var/run"
+-then
+-	piddir="/var/run"
+-elif test -d "/etc"
+-then
+-	piddir="/etc"
+-fi
+-
++piddir="${localstatedir}"
+ 
+ cat >>confdefs.h <<_ACEOF
+ #define PIDDIR "$piddir"
+--- file.c.orig	2010-05-31 16:35:37.000000000 -0500
++++ file.c	2010-05-31 16:40:32.000000000 -0500
+@@ -336,9 +336,8 @@
+     return FALSE;
+   }
+   if(buf.st_uid != geteuid())  {
+-    LogError("%s: The %s '%s' must be owned by you.\n", 
+-	prog, description, filename);
+-    return FALSE;
++    LogWarning("%s: The %s '%s' is owned by %d, should be owned by %d.\n", 
++	prog, description, filename, buf.st_uid, geteuid());
+   }
+   if((buf.st_mode & 0777 ) & ~permmask) {
+     /* 
+--- http/cervlet.c.orig	2010-06-01 09:17:02.000000000 -0500
++++ http/cervlet.c	2010-06-01 13:00:35.000000000 -0500
+@@ -333,7 +333,7 @@
+   
+   HEAD("_runtime", 1000)
+   out_print(res,
+-	    "<center><h3>Monit runtime status</h3><center><br>");
++	    "<h3>Monit runtime status</h3><br>");
+   out_print(res,"<table cellspacing=0 cellpadding=3 border=1 width=\"90%%\" style=\"border:1px solid #ccc;border-collapse:collapse;\">"
+ 	    "<tr><td width=\"40%%\" bgcolor=\"#edf5ff\"><b>Parameter</b></td>"
+ 	    "<td width=\"60%%\" bgcolor=\"#edf5ff\"><b>Value</b></td></tr>");
+@@ -468,7 +468,7 @@
+       "<tr nowrap>");
+     out_print(res,
+       "<td>"
+-      "<font size=+1 color='#f0000'>Stop Monit http server?</font>"
++      "<font size=+1 color='#ff0000'>Stop Monit http server?</font>"
+       "</td>"
+       "<td align=right>"
+       "<form method=POST action=\"_runtime\">"
+@@ -1455,7 +1455,7 @@
+     return;
+   }
+   
+-  out_print(res, "<table cellspacing=16><tr nowrap><td><font size=+1>");
++  out_print(res, "<table cellspacing=16><tr nowrap>");
+   /* Start program */
+   if(s->start)
+       out_print(res, 

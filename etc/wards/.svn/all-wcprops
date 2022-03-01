@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repo/!svn/ver/7049/ic/alleviam/trunk/etc/wards
+END
+ops-apps.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repo/!svn/ver/7049/ic/alleviam/trunk/etc/wards/ops-apps.cfg
+END
+portal-apps.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repo/!svn/ver/7049/ic/alleviam/trunk/etc/wards/portal-apps.cfg
+END
+dmcc-apps.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repo/!svn/ver/6940/ic/alleviam/trunk/etc/wards/dmcc-apps.cfg
+END
+ic-dev.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repo/!svn/ver/6940/ic/alleviam/trunk/etc/wards/ic-dev.cfg
+END
+ic-ops.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repo/!svn/ver/7049/ic/alleviam/trunk/etc/wards/ic-ops.cfg
+END
+misc-apps.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repo/!svn/ver/7049/ic/alleviam/trunk/etc/wards/misc-apps.cfg
+END

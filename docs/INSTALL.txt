@@ -1,0 +1,56 @@
+Installing Alleviam
+*******************
+
+This guide will tell you how to install the Alleviam buildout for the host
+cancer.jpl.nasa.gov.  This host is the *master* Alleviam server.  Alleviam is
+built on Monit_, a utility for monitoring a the health of and network services
+provided by a single Unix system as well as network services of remote Unix
+systems.
+
+
+Quick Installation
+==================
+
+Hate reading and need excitement?  Try the following:
+
+1. Run: ``/usr/local/python-2.4.4/bin/python2.4 bootstrap.py -dc operations.cfg``
+2. Run: ``bin/buildout -c operations.cfg``
+3. Run: ``sudo bin/buildout -c operations.cfg install permissions``
+4. Add to ``/usr/local/apache2/conf/edrn.conf``: ``Include /usr/local/alleviam/parts/alleviam-config/httpd.cfg``
+5. Copy ``parts/alleviam-config/alleviam`` to ``/etc/init.d``
+6. Run: ``chkconfig --add alleviam``
+7. Run: ``service httpd restart``
+8. Run: ``service alleviam start``
+
+
+Requirements
+============
+
+python >= 2.4
+zlib 1.2; quite standard these days
+png; also quite standard (sudo apt-get install libpng12-dev)
+libjpeg; optional on some systems
+freetype2; optional on some systems (sudo apt-get install libfreetype6-dev)
+libperl5.10; perl runtime might only be present, need shared perl lib too (install libperl-dev, libperl5.10)
+fontconfig; sudo apt-get install libfontconfig1-dev
+libldap2-dev
+apache2
+libxml2-dev
+libxslt-dev
+
+.. References:
+.. _`Informatics Center`: http://cancer.jpl.nasa.gov/
+.. _EDRN: http://edrn.nci.nih.gov/
+.. _JPL: http://www.jpl.nasa.gov/
+.. _Caltech: http://www.caltech.edu/
+.. _Monit: http://mmonit.com/monit/
+
+
+.. Author:
+    Sean Kelly
+    Jet Propulsion Laboratory
+    California Institute of Technology
+
+.. Copyright:
+    Copyright 2010 California Institute of Technology. ALL RIGHTS RESERVED.
+    U.S. Government sponsorship acknowledged.

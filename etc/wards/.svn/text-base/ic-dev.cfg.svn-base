@@ -1,0 +1,39 @@
+# Copyright 2010 California Institute of Technology. ALL RIGHTS
+# RESERVED. U.S. Government Sponsorship acknowledged.
+#
+# Ward: Informatics Center Development
+# ************************************
+#
+# Checks of services for development and of in-development appplications on the development
+# host, tumor.jpl.nasa.gov.
+
+check host DEV-tumor.jpl.nasa.gov with address tumor.jpl.nasa.gov
+    # Host up
+    if failed icmp type echo count 5 with timeout 10 seconds then alert
+    # Remote log in via sshd
+    if failed port 22 type tcp protocol ssh then alert
+    # Postfix
+    if failed port 25 type tcp protocol smtp then alert
+    # Varnish cache
+    if failed port 80 type tcp protocol http with timeout 5 seconds then alert
+    # Apache HTTPD
+    if failed port 8100 type tcp protocol http with timeout 20 seconds then alert
+    # Buildbot Buildmaster
+    if failed port 8103 type tcp with timeout 20 seconds then alert
+    # Buildbot Web server
+    if failed port 8104 type tcp protocol http with timeout 20 seconds then alert
+    # Informatics Center Developer's private site
+    if failed url
+        http://tumor.jpl.nasa.gov/
+        and content == "Welcome to Tumor &mdash; EDRN Informatics Center"
+        then alert
+    # Quack quality assurance
+    if failed url
+        http://tumor.jpl.nasa.gov/quack/
+        and content == "quack.css"
+        then alert
+    # Subversion repository
+    if failed url
+        http://tumor.jpl.nasa.gov/repo/
+        and content == "repo - Revision"
+        then alert

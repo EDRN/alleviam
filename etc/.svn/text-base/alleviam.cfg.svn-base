@@ -1,0 +1,40 @@
+# Copyright 2010 California Institute of Technology. ALL RIGHTS
+# RESERVED. U.S. Government Sponsorship acknowledged.
+#
+# Alleviam configuration. Tells what to monitor, how to alleviate.
+
+# Check services every 5 minutes (300 seconds)
+set daemon 300
+set idfile ${buildout:directory}/var/monit.id
+set logfile syslog facility log_daemon
+set statefile ${buildout:directory}/var/monit.state
+set mailserver localhost
+
+# HTTPD
+set httpd port ${ports:monit}
+    and use the address localhost
+    allow localhost
+
+# FIXME: Alerts
+set alert edrn-jpl@tumor.jpl.nasa.gov
+    with reminder on 10 cycles
+set mail-format {
+    from: edrn-jpl@tumor.jpl.nasa.gov
+    subject: $SERVICE $EVENT
+    message: Alleviam: $ACTION $SERVICE at $DATE on $HOST: $DESCRIPTION.
+}
+
+set eventqueue
+    basedir ${buildout:directory}/var/eventqueue
+    slots 100
+
+include ${buildout:directory}/etc/wards/*.cfg
+    
+#check host cancer.jpl.nasa.gov with address cancer.jpl.nasa.gov.
+#    if failed icmp type echo count 5 with timeout 15 seconds then alert
+#    if failed port 80 proto http then alert
+#    if failed port 443 type tcpssl proto http then alert
+#    if failed port 636 type tcpssl proto ldap3 then alert
+
+#check host ginger.fhcrc.org with address ginger.fhcrc.org.
+#    if failed icmp type echo count 5 with timeout 15 seconds then alert

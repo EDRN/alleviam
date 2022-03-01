@@ -1,0 +1,33 @@
+# Copyright 2010 California Institute of Technology. ALL RIGHTS
+# RESERVED. U.S. Government Sponsorship acknowledged.
+#
+# Apache HTTPD Configuration for Alleviam 
+# =======================================
+#
+# This file contains configuration for the Apache HTTPD 2 server.
+# FIXME: docs?
+
+LoadModule depends_module ${paths:modules}/mod_depends.so
+LoadModule transform_module ${paths:modules}/mod_transform.so
+TransformCache /edrn-theme.xsl ${buildout:parts-directory}/alleviam-config/theme.xsl
+RedirectMatch permanent ^/alleviam$ /alleviam/
+<Location /alleviam/>
+    AuthType basic
+    AuthName "Alleviam"
+    AuthBasicProvider file
+    AuthUserFile ${buildout:directory}/etc/alleviam.htpasswd
+    Require valid-user
+    FilterDeclare Alleviam RESOURCE
+    FilterProvider Alleviam XSLT resp=Content-Type $text/html
+    TransformOptions +ApacheFS +HTML
+    TransformSet /edrn-theme.xsl
+    FilterChain Alleviam
+    ProxyPass http://localhost:${ports:monit}/
+    ProxyPassReverse /
+</Location>
+ProxyPass /edrn-skin !
+Alias /edrn-skin "${buildout:directory}/src/skin"
+<Directory "${buildout:directory}/src/skin">
+    Allow from All
+    Options +Indexes +FollowSymLinks
+</Directory>

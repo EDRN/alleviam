@@ -1,0 +1,107 @@
+# Copyright 2010 California Institute of Technology. ALL RIGHTS
+# RESERVED. U.S. Government Sponsorship acknowledged.
+#
+# build.cfg
+# =========
+#
+# How to build Alleviam.
+
+
+# Monit
+# -----
+#
+# Monit, open source simple monitoring and alleviation.  Visit http://mmonit.com/monit/ for more details.
+[monit]
+recipe = hexagonit.recipe.cmmi
+url = ${downloads:monit}
+md5sum = ${md5s:monit}
+configure-options =
+    --bindir=${buildout:bin-directory}
+    --localstatedir=${buildout:directory}/var
+    --with-ssl
+patches = ${buildout:directory}/patches/monit.patch
+
+
+# XDV Compile
+# -----------
+#
+# Compile into XSLT from the XDV rules and theme.
+[xdv-compile]
+recipe = sk.recipe.xdv
+rules = ${buildout:directory}/etc/rules.xml
+theme = ${buildout:directory}/src/skin/example.html
+output = ${buildout:parts-directory}/alleviam-config/theme.xsl
+
+
+# Alleviam Configuration
+# ----------------------
+#
+# Generate the Alleviam configuration file to be used by Monit.
+[alleviam-config]
+recipe = collective.recipe.template
+input = ${buildout:directory}/etc/alleviam.cfg
+output = ${buildout:parts-directory}/alleviam-config/alleviam.cfg
+
+
+# RC Init
+# -------
+#
+# Create the rc.d script to start/stop Alleviam.
+[rc-init]
+recipe = collective.recipe.template
+input = ${buildout:directory}/etc/init.d/alleviam
+output = ${buildout:parts-directory}/alleviam-config/alleviam
+
+
+# Apache HTTPD Configuration
+# --------------------------
+#
+# Create a configuration file so Alleviam is accessible through the web.
+[httpd-config]
+recipe = collective.recipe.template
+input = ${buildout:directory}/etc/httpd.cfg
+output = ${buildout:parts-directory}/alleviam-config/httpd.cfg
+
+
+# mod-depends
+# -----------
+#
+# This is a patched mod-depends from http://code.google.com/p/html-xslt/.  It must be built and installed
+# (as root) prior to installing mod-transform.
+[mod-depends]
+recipe = hexagonit.recipe.cmmi
+url = ${downloads:mod-depends}
+md5sum = ${md5s:mod-depends}
+configuration-options =
+    --with-apxs=${paths:apxs}
+
+
+# mod-transform
+# -------------
+#
+# This is a patched mod-transform from http://code.google.com/p/html-xslt/.  Note that the patched
+# mod-depends (see above) must be built and installed (as root) prior to installing mod-transform.
+[mod-transform]
+recipe = hexagonit.recipe.cmmi
+url = ${downloads:mod-transform}
+md5sum = ${md5s:mod-transform}
+configuration-options =
+    --with-apxs=${paths:apxs}
+
+
+# Kibbles and Bits
+# ----------------
+#
+# Set up ownership and modes.
+[permissions]
+recipe = collective.recipe.cmd
+on_install = true
+on_update = true
+shell = /bin/sh
+cmds =
+    [ `id -u` -eq 0 ] || echo Must be root for these commands to succeed
+    [ -d ${buildout:directory}/var ] || mkdir ${buildout:directory}/var
+    [ -d ${buildout:directory}/var/eventqueue ] || mkdir ${buildout:directory}/var/eventqueue
+    chown root:root ${buildout:parts-directory}/alleviam-config/alleviam.cfg
+    chmod 600 ${buildout:parts-directory}/alleviam-config/alleviam.cfg
+

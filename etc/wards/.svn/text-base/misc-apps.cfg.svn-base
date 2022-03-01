@@ -1,0 +1,26 @@
+# Copyright 2010 California Institute of Technology. ALL RIGHTS
+# RESERVED. U.S. Government Sponsorship acknowledged.
+#
+# Ward: Miscellaneous Applications
+# ********************************
+#
+# End-to-end tests of miscellaneous applications on which the Informatics Center relies on.
+
+# Informatics Center Basecamp
+# ===========================
+#
+# Rails-based collaboration tool to which we have a subscription.
+check host edrn-jpl.basecamphq.com with address edrn-jpl.basecamphq.com
+    if failed url
+        https://edrn-jpl.basecamphq.com/login
+        and content == "NASA Jet Propulsion Laboratory"
+        with timeout 30 seconds for 10 cycles
+        then alert
+
+# JPL Directory Service
+# =====================
+#
+# Without this we can't log into our development host.
+check host LDAP-JPLDIR-ops with address ldap.jpl.nasa.gov
+    if failed icmp type echo count 3 with timeout 10 seconds then alert
+    if failed port 636 type tcpssl protocol ldap3 then alert

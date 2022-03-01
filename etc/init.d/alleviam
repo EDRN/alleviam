@@ -1,0 +1,88 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          alleviam
+# Required-Start:    $remote_fs
+# Required-Stop:     $remote_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Alleviam, the EDRN Alleviation and Monitoring System.
+### END INIT INFO
+# /etc/init.d/alleviam start and stop monit daemon monitor process.
+# Copyright 2010 California Institute of Technology. ALL RIGHTS
+# RESERVED. U.S. Government Sponsorship acknowledged.
+# Adapted from Debian Monit, re-tooled for cancer.jpl.nasa.gov (Fedora 7)
+
+PATH="${buildout:bin-directory}:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+daemon="${buildout:bin-directory}/monit"
+config="${buildout:parts-directory}/alleviam-config/alleviam.cfg"
+pidfile="${buildout:directory}/var/monit.pid"
+name=alleviam
+retval=0
+args="-c $config -p $pidfile"
+
+if [ -f /etc/init.d/functions ]; then
+    . /etc/init.d/functions
+elif [ -f /etc/rc.d/init.d/functions ]; then
+    . /etc/rc.d/init.d/functions
+else
+    exit 0
+fi
+
+# Check if DAEMON binary exist
+test -f $daemon || exit 0
+
+start() {
+    echo -n $"Starting $name: "
+    daemon --pidfile=$pidfile $daemon $args
+    retval=$?
+    if [ $retval = 0 ]; then
+        touch /var/lock/subsys/alleviam
+    else
+        retval=1
+    fi
+    return $retval
+}
+stop() {
+    echo -n $"Stopping $name: "
+    killproc -p $pidfile $daemon
+    retval=$?
+    echo
+    if [ $retval = 0 ]; then
+        rm -f /var/lock/subsys/alleviam
+    else
+        retval=1
+    fi
+    return $retval
+}
+reload() {
+    echo -n $"Reloading $name: "
+    killproc -p $pidfile $daemon -HUP
+    return $?
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status -p $pidfile $daemon
+        retval=$?
+        ;;
+    reload)
+        reload
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    condrestart)
+        [ -f /var/lock/subsys/alleviam ] && restart
+        ;;
+    *)
+        echo $"Usage: $name {start|stop|restart|reload|condrestart|status}" 1>&2
+        exit 1
+esac
+exit $retval

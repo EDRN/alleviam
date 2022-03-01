@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyright 2010 California Institute of Technology. ALL RIGHTS
+RESERVED. U.S. Government Sponsorship acknowledged.
+
+Alleviam Rules for XDV
+======================
+
+These are the rules by which output from Monit is transformed into Alleviam via XDV, an implementation
+of Deliverance. For more information, see:
+
+* http://deliveranceproject.org/ for the Deliverance concept and philosophy
+* http://pypi.python.org/pypi/xdv for the XDV implementation
+
+-->
+<xdv:rules
+    xmlns:xdv='http://namespaces.plone.org/xdv'
+    xmlns:css='http://namespaces.plone.org/xdv+css'
+    xmlns:xsl='http://www.w3.org/1999/XSL/Transform'
+    xmlns:xi='http://www.w3.org/2001/XInclude'>
+
+    <!-- Fix URL to the EDRN CSS -->
+    <xdv:replace theme='/html/head/link[@rel="stylesheet"]'>
+        <link rel='stylesheet' type='text/css' href='/edrn-skin/css/edrn-informatics.css' />
+    </xdv:replace>
+
+    <!-- Fix URLs to imagery in footer by just rewriting the whole damn footer. -->
+    <xdv:replace css:theme='#footer'>
+        <div id='footer'>
+            A Service of the National Cancer Institute
+            <br /><br />
+            <a href='http://hhs.gov'><img src='/edrn-skin/img/footer_hhs.gif' alt='Department of Health and Human Services' /></a>
+            <a href='http://nih.gov'><img src='/edrn-skin/img/footer_nih.gif' style='margin-left: 12px;'
+                alt='National Institutes of Health' /></a>
+            <a href='http://usa.gov'><img src='/edrn-skin/img/footer_usagov.gif' alt='USA.gov' /></a>
+        </div>
+    </xdv:replace>
+
+    <!-- Additional CSS -->
+    <xdv:after theme='/html/head/link[@rel="stylesheet"]'>
+        <style type='text/css'>
+            #content {
+                margin: 1em 2em;
+            }
+        </style>
+    </xdv:after>
+    
+    <!-- Add Monit's http-equiv's for reloading and non-caching -->
+    <xdv:append theme='/html/head' content='/html/head/meta'/>
+
+    <!-- Titling -->
+    <xdv:replace theme='/html/head/title'>
+        <title>Alleviam</title>
+    </xdv:replace>
+    <xdv:replace css:theme='.app-title'>
+        <h2 class='app-title'>EDRN Alleviam</h2>
+    </xdv:replace>
+
+    <!-- And identify who this is for ... this should probably be part of the theme, but it's not for some reason. -->
+    <xdv:append css:theme='#edrnlogo'>
+        <strong>Early Detection Research Network</strong><br/>
+        <span class='smaller'>Division of Cancer Prevention</span>
+    </xdv:append>
+
+    <xdv:drop css:theme='.userdetails'/>
+
+    <!-- Navigation -->
+    <xdv:copy css:theme='#breadcrumbs' content='/html/body/table[2]/tr/td[1]/font'/>
+
+    <!-- Little status box -->
+    <xdv:append css:theme='#content' if-content='/html/body/center/table[1]/tr/td/p[@align="center"]/i'>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Alleviam:</td>
+                    <td><a href='_runtime'>running</a></td>
+                </tr>
+                <tr>
+                    <td>Status:</td>
+                    <td><xsl:value-of select='/html/body/center/table[1]/tr/td/p[@align="center"]/i'/></td>
+                </tr>
+            </tbody>
+        </table>
+    </xdv:append>
+
+    <!-- Add Monit's headings -->
+    <xdv:append css:theme='#content' content='/html/body/center/h3'/>
+
+    <!--
+        Monit wraps everything in tables, however the only useful data are in tables that are set with either
+        90% width or 16 cellspacing, so we key off those attributes.
+    -->
+    <xdv:append css:theme='#content' content='/html/body/center/table[@width="90%"]'/>
+    <xdv:append css:theme='#content' content='/html/body/center/table[@cellspacing="16"]'/>
+
+</xdv:rules>
