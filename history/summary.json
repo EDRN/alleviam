@@ -168,18 +168,18 @@
     "icon": "https://favicons.githubusercontent.com/edrn.nci.nih.gov",
     "slug": "edrn-portal-biomarker",
     "status": "down",
-    "uptime": "8.38%",
-    "uptimeDay": "8.38%",
-    "uptimeWeek": "8.38%",
-    "uptimeMonth": "8.38%",
-    "uptimeYear": "8.38%",
+    "uptime": "3.42%",
+    "uptimeDay": "3.42%",
+    "uptimeWeek": "3.42%",
+    "uptimeMonth": "3.42%",
+    "uptimeYear": "3.42%",
     "time": 401,
     "timeDay": 401,
     "timeWeek": 401,
     "timeMonth": 401,
     "timeYear": 401,
     "dailyMinutesDown": {
-      "2022-03-01": 0
+      "2022-03-01": 1
     }
   },
   {
