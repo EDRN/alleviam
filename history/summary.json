@@ -167,19 +167,19 @@
     "url": "https://edrn.nci.nih.gov/data-and-resources/biomarkers/private-test",
     "icon": "https://favicons.githubusercontent.com/edrn.nci.nih.gov",
     "slug": "edrn-portal-biomarker",
-    "status": "down",
-    "uptime": "3.42%",
-    "uptimeDay": "3.42%",
-    "uptimeWeek": "3.42%",
-    "uptimeMonth": "3.42%",
-    "uptimeYear": "3.42%",
-    "time": 401,
-    "timeDay": 401,
-    "timeWeek": 401,
-    "timeMonth": 401,
-    "timeYear": 401,
+    "status": "up",
+    "uptime": "2.81%",
+    "uptimeDay": "2.81%",
+    "uptimeWeek": "2.81%",
+    "uptimeMonth": "2.81%",
+    "uptimeYear": "2.81%",
+    "time": 367,
+    "timeDay": 367,
+    "timeWeek": 367,
+    "timeMonth": 367,
+    "timeYear": 367,
     "dailyMinutesDown": {
-      "2022-03-01": 1
+      "2022-03-01": 10
     }
   },
   {
