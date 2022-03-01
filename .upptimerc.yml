@@ -69,7 +69,30 @@ sites:
             - nutjob4life
     -
         name: 🧬 EDRN Portal Biomarker
-        url: https://edrn.nci.nih.gov/data-and-resources/biomarkers/private-test
+        url: https://edrn.nci.nih.gov/data-and-resources/biomarkers/4delf
+        __dangerous__body_down: "Unauthorized"
+        assignees:
+            - nutjob4life
+    -
+        name: 🔬 EDRN Portal Science Data
+        url: https://edrn.nci.nih.gov/data-and-resources/data/#c0=20&b_start=20
+        assignees:
+            - nutjob4life
+    -
+        name: 📃 EDRN Portal Protocol
+        url: https://edrn.nci.nih.gov/data-and-resources/protocols/493-heds-reference-set-application-amit-singal
+        __dangerous__body_down: "Unauthorized"
+        assignees:
+            - nutjob4life
+    -
+        name: 📙 EDRN Portal Publication
+        url: https://edrn.nci.nih.gov/data-and-resources/publications/35199349-a-multivariate-parametric-empirical-bayes
+        __dangerous__body_down: "Unauthorized"
+        assignees:
+            - nutjob4life
+    -
+        name: 🏥 EDRN Portal Site
+        url: https://edrn.nci.nih.gov/about/mission-and-structure/sites/447-baylor
         __dangerous__body_down: "Unauthorized"
         assignees:
             - nutjob4life
