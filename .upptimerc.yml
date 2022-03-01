@@ -68,6 +68,12 @@ sites:
         assignees:
             - nutjob4life
     -
+        name: 🧬 EDRN Portal Biomarker
+        url: https://edrn.nci.nih.gov/data-and-resources/biomarkers/private-test
+        __dangerous__body_down: "Unauthorized"
+        assignees:
+            - nutjob4life
+    -
         name: 🔬 EDRN LabCAS
         url: https://edrn-labcas.jpl.nasa.gov/
         assignees:
