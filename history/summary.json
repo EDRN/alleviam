@@ -294,10 +294,10 @@
     "url": "https://edrn.nci.nih.gov/data-and-resources/protocols/493-heds-reference-set-application-amit-singal",
     "icon": "https://favicons.githubusercontent.com/edrn.nci.nih.gov",
     "slug": "edrn-portal-protocol",
-    "status": "up",
+    "status": "down",
     "uptime": "99.84%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.95%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.84%",
     "time": 358,
@@ -306,6 +306,7 @@
     "timeMonth": 387,
     "timeYear": 358,
     "dailyMinutesDown": {
+      "2022-06-14": 1,
       "2022-04-20": 228,
       "2022-03-02": 10
     }
