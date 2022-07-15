@@ -121,18 +121,19 @@ sites:
         url: https://bmdb.jpl.nasa.gov/
         assignees:
             - nutjob4life
-    -
-        name: 🚪 MCL Portal
-        url: https://mcl.nci.nih.gov/
-        assignees:
-            - nutjob4life
-    -
-        name: 🚪 MCL Portal Login
-        url: https://mcl.nci.nih.gov/@@personal-preferences
-        headers:
-            - "Authorization: Basic $MCL_BASIC_AUTH"
-        assignees:
-            - nutjob4life
+# MCL portal is no more as of 2022-07-15 —SK
+#     -
+#         name: 🚪 MCL Portal
+#         url: https://mcl.nci.nih.gov/
+#         assignees:
+#             - nutjob4life
+#     -
+#         name: 🚪 MCL Portal Login
+#         url: https://mcl.nci.nih.gov/@@personal-preferences
+#         headers:
+#             - "Authorization: Basic $MCL_BASIC_AUTH"
+#         assignees:
+#             - nutjob4life
     -
         name: 🔬 MCL LabCAS
         url: https://mcl-labcas.jpl.nasa.gov/
