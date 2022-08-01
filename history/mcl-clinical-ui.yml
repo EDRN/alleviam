@@ -1,7 +1,7 @@
 url: https://mcl.jpl.nasa.gov/clinical-ui/
-status: down
-code: 502
-responseTime: 411
-lastUpdated: 2022-08-01T07:58:40.250Z
+status: up
+code: 200
+responseTime: 38
+lastUpdated: 2022-08-01T14:27:42.649Z
 startTime: Fri Jul 09 2021 16:24:57 GMT+0000 (Coordinated Universal Time)
 generator: Upptime <https://github.com/upptime/upptime>
