@@ -10,11 +10,11 @@
     "uptimeWeek": "99.72%",
     "uptimeMonth": "99.89%",
     "uptimeYear": "99.12%",
-    "time": 612,
-    "timeDay": 376,
-    "timeWeek": 550,
-    "timeMonth": 513,
-    "timeYear": 623,
+    "time": 613,
+    "timeDay": 745,
+    "timeWeek": 585,
+    "timeMonth": 516,
+    "timeYear": 624,
     "dailyMinutesDown": {
       "2022-08-15": 28,
       "2022-08-12": 21,
@@ -79,8 +79,7 @@
       "2021-09-15": 29,
       "2021-09-07": 44,
       "2021-08-27": 14,
-      "2021-08-23": 11,
-      "2021-08-22": 21
+      "2021-08-23": 11
     }
   },
   {
@@ -94,11 +93,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.80%",
-    "time": 338,
-    "timeDay": 162,
-    "timeWeek": 486,
-    "timeMonth": 500,
-    "timeYear": 358,
+    "time": 339,
+    "timeDay": 664,
+    "timeWeek": 508,
+    "timeMonth": 503,
+    "timeYear": 359,
     "dailyMinutesDown": {
       "2022-06-30": 1044,
       "2022-04-22": 6,
@@ -117,10 +116,10 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.80%",
     "time": 41,
-    "timeDay": 20,
-    "timeWeek": 87,
-    "timeMonth": 73,
-    "timeYear": 43,
+    "timeDay": 153,
+    "timeWeek": 102,
+    "timeMonth": 76,
+    "timeYear": 44,
     "dailyMinutesDown": {
       "2022-06-30": 1044
     }
@@ -131,16 +130,16 @@
     "icon": "https://favicons.githubusercontent.com/edrn.nci.nih.gov",
     "slug": "edrn-portal",
     "status": "up",
-    "uptime": "99.37%",
+    "uptime": "99.38%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.83%",
     "time": 467,
-    "timeDay": 570,
-    "timeWeek": 380,
-    "timeMonth": 369,
-    "timeYear": 475,
+    "timeDay": 123,
+    "timeWeek": 334,
+    "timeMonth": 367,
+    "timeYear": 474,
     "dailyMinutesDown": {
       "2022-06-27": 38,
       "2022-04-20": 229,
@@ -163,9 +162,9 @@
     "uptimeMonth": "99.87%",
     "uptimeYear": "99.79%",
     "time": 2269,
-    "timeDay": 2345,
-    "timeWeek": 2591,
-    "timeMonth": 2168,
+    "timeDay": 2190,
+    "timeWeek": 2565,
+    "timeMonth": 2161,
     "timeYear": 2269,
     "dailyMinutesDown": {
       "2022-08-17": 13,
@@ -207,16 +206,16 @@
     "icon": "https://favicons.githubusercontent.com/edrn.nci.nih.gov",
     "slug": "edrn-portal-biomarker",
     "status": "up",
-    "uptime": "99.73%",
+    "uptime": "99.74%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "99.73%",
-    "time": 373,
-    "timeDay": 97,
-    "timeWeek": 48,
+    "uptimeYear": "99.74%",
+    "time": 372,
+    "timeDay": 30,
+    "timeWeek": 43,
     "timeMonth": 58,
-    "timeYear": 373,
+    "timeYear": 372,
     "dailyMinutesDown": {
       "2022-06-27": 38,
       "2022-06-14": 9,
@@ -283,11 +282,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.88%",
-    "time": 242,
-    "timeDay": 95,
-    "timeWeek": 46,
+    "time": 241,
+    "timeDay": 36,
+    "timeWeek": 42,
     "timeMonth": 56,
-    "timeYear": 242,
+    "timeYear": 241,
     "dailyMinutesDown": {
       "2022-07-08": 12,
       "2022-06-27": 38,
@@ -307,11 +306,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.87%",
-    "time": 510,
-    "timeDay": 92,
-    "timeWeek": 47,
+    "time": 507,
+    "timeDay": 32,
+    "timeWeek": 42,
     "timeMonth": 56,
-    "timeYear": 510,
+    "timeYear": 507,
     "dailyMinutesDown": {
       "2022-07-08": 43,
       "2022-06-27": 38,
@@ -331,11 +330,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.88%",
-    "time": 250,
-    "timeDay": 95,
-    "timeWeek": 55,
-    "timeMonth": 63,
-    "timeYear": 250,
+    "time": 249,
+    "timeDay": 33,
+    "timeWeek": 50,
+    "timeMonth": 64,
+    "timeYear": 249,
     "dailyMinutesDown": {
       "2022-07-08": 43,
       "2022-06-27": 38,
@@ -353,11 +352,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.88%",
-    "time": 302,
-    "timeDay": 108,
-    "timeWeek": 50,
-    "timeMonth": 60,
-    "timeYear": 302,
+    "time": 300,
+    "timeDay": 39,
+    "timeWeek": 46,
+    "timeMonth": 59,
+    "timeYear": 300,
     "dailyMinutesDown": {
       "2022-07-08": 44,
       "2022-06-27": 38,
@@ -376,10 +375,10 @@
     "uptimeMonth": "99.91%",
     "uptimeYear": "99.85%",
     "time": 344,
-    "timeDay": 188,
-    "timeWeek": 336,
-    "timeMonth": 339,
-    "timeYear": 349,
+    "timeDay": 521,
+    "timeWeek": 364,
+    "timeMonth": 340,
+    "timeYear": 350,
     "dailyMinutesDown": {
       "2022-08-15": 24,
       "2022-08-12": 13,
@@ -421,8 +420,7 @@
       "2021-09-15": 28,
       "2021-09-07": 43,
       "2021-08-27": 7,
-      "2021-08-23": 11,
-      "2021-08-22": 20
+      "2021-08-23": 11
     }
   },
   {
@@ -436,11 +434,11 @@
     "uptimeWeek": "99.79%",
     "uptimeMonth": "99.91%",
     "uptimeYear": "99.61%",
-    "time": 426,
-    "timeDay": 253,
-    "timeWeek": 455,
-    "timeMonth": 413,
-    "timeYear": 429,
+    "time": 427,
+    "timeDay": 659,
+    "timeWeek": 492,
+    "timeMonth": 416,
+    "timeYear": 430,
     "dailyMinutesDown": {
       "2022-08-17": 12,
       "2022-08-15": 9,
@@ -482,8 +480,7 @@
       "2021-10-14": 29,
       "2021-10-08": 27,
       "2021-09-15": 28,
-      "2021-09-07": 42,
-      "2021-08-22": 20
+      "2021-09-07": 42
     }
   },
   {
@@ -492,14 +489,14 @@
     "icon": "https://favicons.githubusercontent.com/edrn.jpl.nasa.gov",
     "slug": "edrn-v-portal",
     "status": "up",
-    "uptime": "95.86%",
+    "uptime": "95.87%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.96%",
     "uptimeYear": "95.41%",
-    "time": 621,
-    "timeDay": 66,
-    "timeWeek": 134,
+    "time": 620,
+    "timeDay": 167,
+    "timeWeek": 141,
     "timeMonth": 130,
     "timeYear": 694,
     "dailyMinutesDown": {
@@ -554,8 +551,7 @@
       "2021-10-14": 29,
       "2021-10-13": 68,
       "2021-09-15": 27,
-      "2021-09-07": 41,
-      "2021-08-22": 19
+      "2021-09-07": 41
     }
   },
   {
@@ -564,15 +560,15 @@
     "icon": "https://favicons.githubusercontent.com/bmdb.jpl.nasa.gov",
     "slug": "edrn-focus-biomarker-database",
     "status": "up",
-    "uptime": "99.65%",
+    "uptime": "99.66%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.97%",
     "uptimeYear": "99.64%",
     "time": 381,
-    "timeDay": 162,
-    "timeWeek": 441,
-    "timeMonth": 381,
+    "timeDay": 454,
+    "timeWeek": 459,
+    "timeMonth": 378,
     "timeYear": 384,
     "dailyMinutesDown": {
       "2022-08-12": 15,
@@ -606,8 +602,7 @@
       "2021-10-15": 26,
       "2021-10-14": 18,
       "2021-09-15": 27,
-      "2021-09-07": 40,
-      "2021-08-22": 19
+      "2021-09-07": 40
     }
   },
   {
@@ -622,9 +617,9 @@
     "uptimeMonth": "99.88%",
     "uptimeYear": "99.94%",
     "time": 352,
-    "timeDay": 219,
-    "timeWeek": 444,
-    "timeMonth": 363,
+    "timeDay": 512,
+    "timeWeek": 472,
+    "timeMonth": 364,
     "timeYear": 359,
     "dailyMinutesDown": {
       "2022-08-12": 14,
@@ -644,8 +639,7 @@
       "2021-10-28": 17,
       "2021-10-14": 18,
       "2021-09-15": 26,
-      "2021-09-07": 18,
-      "2021-08-22": 18
+      "2021-09-07": 18
     }
   },
   {
@@ -660,10 +654,10 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.96%",
     "time": 478,
-    "timeDay": 324,
-    "timeWeek": 509,
-    "timeMonth": 480,
-    "timeYear": 485,
+    "timeDay": 571,
+    "timeWeek": 522,
+    "timeMonth": 479,
+    "timeYear": 486,
     "dailyMinutesDown": {
       "2022-05-25": 19,
       "2022-03-29": 12,
@@ -678,8 +672,7 @@
       "2021-11-06": 15,
       "2021-10-28": 17,
       "2021-09-15": 26,
-      "2021-09-07": 21,
-      "2021-08-22": 18
+      "2021-09-07": 21
     }
   },
   {
@@ -688,14 +681,14 @@
     "icon": "https://favicons.githubusercontent.com/mcl.jpl.nasa.gov",
     "slug": "mcl-infirmary-clinical-data-api-v1",
     "status": "up",
-    "uptime": "99.53%",
+    "uptime": "99.54%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.49%",
     "time": 50,
-    "timeDay": 31,
-    "timeWeek": 64,
+    "timeDay": 78,
+    "timeWeek": 68,
     "timeMonth": 59,
     "timeYear": 51,
     "dailyMinutesDown": {
@@ -714,8 +707,7 @@
       "2021-10-28": 16,
       "2021-10-15": 26,
       "2021-09-15": 25,
-      "2021-09-07": 21,
-      "2021-08-22": 17
+      "2021-09-07": 21
     }
   },
   {
@@ -724,14 +716,14 @@
     "icon": "https://favicons.githubusercontent.com/mcl.jpl.nasa.gov",
     "slug": "mcl-infirmary-clinical-data-api-v2",
     "status": "up",
-    "uptime": "99.55%",
+    "uptime": "99.56%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.51%",
     "time": 53,
-    "timeDay": 30,
-    "timeWeek": 64,
+    "timeDay": 79,
+    "timeWeek": 68,
     "timeMonth": 59,
     "timeYear": 55,
     "dailyMinutesDown": {
@@ -760,8 +752,8 @@
     "uptimeMonth": "99.11%",
     "uptimeYear": "99.90%",
     "time": 55,
-    "timeDay": 31,
-    "timeWeek": 67,
+    "timeDay": 80,
+    "timeWeek": 70,
     "timeMonth": 71,
     "timeYear": 57,
     "dailyMinutesDown": {
@@ -785,9 +777,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.98%",
     "time": 125,
-    "timeDay": 16,
-    "timeWeek": 91,
-    "timeMonth": 126,
+    "timeDay": 27,
+    "timeWeek": 76,
+    "timeMonth": 124,
     "timeYear": 125,
     "dailyMinutesDown": {
       "2022-02-22": 61
