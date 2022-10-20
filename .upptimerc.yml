@@ -109,13 +109,16 @@ sites:
         __dangerous__disable_verify_peer: true
         assignees:
             - nutjob4life
-    -
-        name: 💁‍♀️ EDRN β Portal
-        url: https://edrn.jpl.nasa.gov/portal/
-        # JPL can't issue good certificates:
-        __dangerous__disable_verify_peer: true
-        assignees:
-            - nutjob4life
+
+# EDRN β portal is no more as of 2022-10-20 —SK
+#    -
+#        name: 💁‍♀️ EDRN β Portal
+#        url: https://edrn.jpl.nasa.gov/portal/
+#        # JPL can't issue good certificates:
+#        __dangerous__disable_verify_peer: true
+#        assignees:
+#            - nutjob4life
+
     -
         name: 🧬 EDRN Focus Biomarker Database
         url: https://bmdb.jpl.nasa.gov/
