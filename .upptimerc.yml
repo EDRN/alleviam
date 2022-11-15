@@ -12,6 +12,8 @@ sites:
         # for the MCL service account.
         name: ℹ️ Directory Service
         url: https://mcl.jpl.nasa.gov/infirmary/v2/hello/world
+        # JPL can't issue good certificates:
+        __dangerous__disable_verify_peer: true
         headers:
             - "Content-Type: application/json"
             - "Authorization: Basic $MCL_BASIC_AUTH"
@@ -122,6 +124,8 @@ sites:
     -
         name: 🧬 EDRN Focus Biomarker Database
         url: https://bmdb.jpl.nasa.gov/
+        # JPL can't issue good certificates:
+        __dangerous__disable_verify_peer: true
         assignees:
             - nutjob4life
 # MCL portal is no more as of 2022-07-15 —SK
@@ -146,22 +150,30 @@ sites:
     -
         name: 📚 MCL Knowledge System Database
         url: https://mcl.jpl.nasa.gov/ksdb/
+        # JPL can't issue good certificates:
+        __dangerous__disable_verify_peer: true
         assignees:
             - nutjob4life
             - yuliujpl
     -
         name: 👩‍⚕️ MCL Infirmary Clinical Data API (v1)
         url: https://mcl.jpl.nasa.gov/infirmary/v1/ping
+        # JPL can't issue good certificates:
+        __dangerous__disable_verify_peer: true
         assignees:
             - nutjob4life
     -
         name: 👩‍⚕️ MCL Infirmary Clinical Data API (v2)
         url: https://mcl.jpl.nasa.gov/infirmary/v2/ping
+        # JPL can't issue good certificates:
+        __dangerous__disable_verify_peer: true
         assignees:
             - nutjob4life
     -
         name: 🧪 MCL Clinical UI
         url: https://mcl.jpl.nasa.gov/clinical-ui/
+        # JPL can't issue good certificates:
+        __dangerous__disable_verify_peer: true
         assignees:
             - nutjob4life
             - yuliujpl
