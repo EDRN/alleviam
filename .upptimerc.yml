@@ -95,7 +95,7 @@ sites:
             - nutjob4life
     -
         name: 🏥 EDRN Portal Site
-        url: https://edrn.nci.nih.gov/about/mission-and-structure/sites/447-baylor
+        url: https://edrn.nci.nih.gov/about-edrn/sites-rdf/877-baylor-college-of-medicine/
         __dangerous__body_down: "Unauthorized"
         assignees:
             - nutjob4life
