@@ -62,13 +62,14 @@ sites:
         url: https://edrn.nci.nih.gov/
         assignees:
             - nutjob4life
-    -
-        name: 🚪 EDRN Portal Login
-        url: https://edrn.nci.nih.gov/@@personal-preferences
-        headers:
-            - "Authorization: Basic $EDRN_BASIC_AUTH"
-        assignees:
-            - nutjob4life
+# New Wagtail portal doesn't support Basic auth, so this test is no good anymore
+#    -
+#        name: 🚪 EDRN Portal Login
+#        url: https://edrn.nci.nih.gov/@@personal-preferences
+#        headers:
+#            - "Authorization: Basic $EDRN_BASIC_AUTH"
+#        assignees:
+#            - nutjob4life
     -
         name: 🧬 EDRN Portal Biomarker
         url: https://edrn.nci.nih.gov/data-and-resources/biomarkers/4delf
