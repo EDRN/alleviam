@@ -89,7 +89,7 @@ sites:
             - nutjob4life
     -
         name: 📙 EDRN Portal Publication
-        url: https://edrn.nci.nih.gov/data-and-resources/publications/35199349-a-multivariate-parametric-empirical-bayes
+        url: https://edrn.nci.nih.gov/data-and-resources/publications/35199349-a-multivariate-parametric-empirical-bayes-screening-approach-for-early-detection-of-hepatocellular-carcinoma-using-multiple-longitudinal-biomarkers/
         __dangerous__body_down: "Unauthorized"
         assignees:
             - nutjob4life
