@@ -1,7 +1,7 @@
 url: https://edrn.nci.nih.gov/data-and-resources/biomarkers/4delf
-status: up
-code: 200
-responseTime: 94
-lastUpdated: 2022-11-20T23:11:34.728Z
+status: down
+code: 404
+responseTime: 181
+lastUpdated: 2022-11-21T20:30:13.038Z
 startTime: Tue Mar 01 2022 15:25:56 GMT+0000 (Coordinated Universal Time)
 generator: Upptime <https://github.com/upptime/upptime>
