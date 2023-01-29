@@ -79,10 +79,10 @@
     "url": "https://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx?WSDL",
     "icon": "https://icons.duckduckgo.com/ip3/www.compass.fhcrc.org.ico",
     "slug": "dmcc-soap-service",
-    "status": "up",
+    "status": "down",
     "uptime": "99.87%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.95%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.80%",
     "time": 398,
@@ -91,6 +91,7 @@
     "timeMonth": 417,
     "timeYear": 427,
     "dailyMinutesDown": {
+      "2023-01-29": 1,
       "2022-06-30": 1044,
       "2022-04-22": 6,
       "2022-02-18": 6
@@ -101,9 +102,9 @@
     "url": "https://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx?WSDL",
     "icon": "https://icons.duckduckgo.com/ip3/www.compass.fhcrc.org.ico",
     "slug": "dmcc-password-verification",
-    "status": "up",
+    "status": "down",
     "uptime": "99.87%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.80%",
@@ -113,6 +114,7 @@
     "timeMonth": 77,
     "timeYear": 58,
     "dailyMinutesDown": {
+      "2023-01-29": 0,
       "2022-06-30": 1044
     }
   },
