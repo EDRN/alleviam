@@ -102,19 +102,19 @@
     "url": "https://edrn-labcas.jpl.nasa.gov/mlserve/alphan/train",
     "icon": "https://icons.duckduckgo.com/ip3/edrn-labcas.jpl.nasa.gov.ico",
     "slug": "ml-serve",
-    "status": "down",
-    "uptime": "2.23%",
-    "uptimeDay": "2.23%",
-    "uptimeWeek": "2.23%",
-    "uptimeMonth": "2.23%",
-    "uptimeYear": "2.23%",
-    "time": 124,
-    "timeDay": 124,
-    "timeWeek": 124,
-    "timeMonth": 124,
-    "timeYear": 124,
+    "status": "up",
+    "uptime": "13.32%",
+    "uptimeDay": "13.32%",
+    "uptimeWeek": "13.32%",
+    "uptimeMonth": "13.32%",
+    "uptimeYear": "13.32%",
+    "time": 134,
+    "timeDay": 134,
+    "timeWeek": 134,
+    "timeMonth": 134,
+    "timeYear": 134,
     "dailyMinutesDown": {
-      "2023-01-30": 0
+      "2023-01-30": 2
     }
   },
   {
