@@ -11,7 +11,7 @@
     "uptimeMonth": "99.45%",
     "uptimeYear": "98.87%",
     "time": 580,
-    "timeDay": 523,
+    "timeDay": 399,
     "timeWeek": 388,
     "timeMonth": 390,
     "timeYear": 525,
@@ -71,8 +71,7 @@
       "2022-02-14": 32,
       "2022-02-09": 6,
       "2022-02-08": 6,
-      "2022-02-05": 12,
-      "2022-02-04": 18
+      "2022-02-05": 12
     }
   },
   {
@@ -87,7 +86,7 @@
     "uptimeMonth": "99.99%",
     "uptimeYear": "99.80%",
     "time": 402,
-    "timeDay": 489,
+    "timeDay": 346,
     "timeWeek": 429,
     "timeMonth": 417,
     "timeYear": 429,
@@ -104,18 +103,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/edrn-labcas.jpl.nasa.gov.ico",
     "slug": "ml-serve",
     "status": "down",
-    "uptime": "49.59%",
+    "uptime": "48.75%",
     "uptimeDay": "0.00%",
-    "uptimeWeek": "49.59%",
-    "uptimeMonth": "49.59%",
-    "uptimeYear": "49.59%",
+    "uptimeWeek": "48.75%",
+    "uptimeMonth": "48.75%",
+    "uptimeYear": "48.75%",
     "time": 306,
-    "timeDay": 376,
+    "timeDay": 231,
     "timeWeek": 306,
     "timeMonth": 306,
     "timeYear": 306,
     "dailyMinutesDown": {
-      "2023-02-03": 1390,
+      "2023-02-04": 51,
+      "2023-02-03": 1440,
       "2023-02-02": 1440,
       "2023-02-01": 96,
       "2023-01-31": 17,
@@ -134,7 +134,7 @@
     "uptimeMonth": "99.99%",
     "uptimeYear": "99.80%",
     "time": 53,
-    "timeDay": 70,
+    "timeDay": 54,
     "timeWeek": 60,
     "timeMonth": 77,
     "timeYear": 59,
@@ -155,7 +155,7 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.91%",
     "time": 474,
-    "timeDay": 305,
+    "timeDay": 408,
     "timeWeek": 376,
     "timeMonth": 397,
     "timeYear": 505,
@@ -180,7 +180,7 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.82%",
     "time": 287,
-    "timeDay": 192,
+    "timeDay": 194,
     "timeWeek": 223,
     "timeMonth": 220,
     "timeYear": 287,
@@ -254,7 +254,7 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.90%",
     "time": 364,
-    "timeDay": 1049,
+    "timeDay": 1043,
     "timeWeek": 995,
     "timeMonth": 899,
     "timeYear": 364,
@@ -280,7 +280,7 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.88%",
     "time": 392,
-    "timeDay": 164,
+    "timeDay": 177,
     "timeWeek": 179,
     "timeMonth": 174,
     "timeYear": 392,
@@ -307,7 +307,7 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.91%",
     "time": 179,
-    "timeDay": 102,
+    "timeDay": 104,
     "timeWeek": 116,
     "timeMonth": 116,
     "timeYear": 179,
@@ -331,7 +331,7 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.91%",
     "time": 224,
-    "timeDay": 157,
+    "timeDay": 176,
     "timeWeek": 191,
     "timeMonth": 179,
     "timeYear": 224,
@@ -392,8 +392,7 @@
       "2022-03-11": 20,
       "2022-03-09": 13,
       "2022-02-14": 30,
-      "2022-02-08": 4,
-      "2022-02-04": 16
+      "2022-02-08": 4
     }
   },
   {
@@ -446,8 +445,7 @@
       "2022-03-09": 12,
       "2022-02-14": 30,
       "2022-02-09": 6,
-      "2022-02-08": 4,
-      "2022-02-04": 16
+      "2022-02-08": 4
     }
   },
   {
@@ -490,8 +488,7 @@
       "2022-05-03": 10,
       "2022-04-22": 6,
       "2022-03-19": 15,
-      "2022-03-09": 11,
-      "2022-02-04": 15
+      "2022-03-09": 11
     }
   },
   {
