@@ -1,7 +1,7 @@
 url: https://edrn-labcas.jpl.nasa.gov/
-status: down
-code: 0
-responseTime: 0
-lastUpdated: 2023-02-10T16:51:47.791Z
+status: up
+code: 200
+responseTime: 49
+lastUpdated: 2023-02-10T16:56:52.534Z
 startTime: Fri Jul 09 2021 14:51:33 GMT+0000 (Coordinated Universal Time)
 generator: Upptime <https://github.com/upptime/upptime>
