@@ -70,8 +70,8 @@ sites:
         url: https://edrn.nci.nih.gov/
         assignees:
             - nutjob4life
-        # New wildcard certs broke GitHub Actions SSL
-        __dangerous__disable_verify_peer: true
+        # New wildcard certs broke GitHub Actions SSL?
+        # __dangerous__disable_verify_peer: true
 
 # New Wagtail portal doesn't support Basic auth, so this test is no good anymore
 #    -
