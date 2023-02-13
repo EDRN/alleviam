@@ -70,8 +70,6 @@ sites:
         url: https://edrn.nci.nih.gov/
         assignees:
             - nutjob4life
-        # New wildcard certs broke GitHub Actions SSL?
-        # __dangerous__disable_verify_peer: true
 
 # New Wagtail portal doesn't support Basic auth, so this test is no good anymore
 #    -
@@ -87,39 +85,29 @@ sites:
         __dangerous__body_down: "Unauthorized"
         assignees:
             - nutjob4life
-        # New wildcard certs broke GitHub Actions SSL
-        __dangerous__disable_verify_peer: true
     -
         name: 🔬 EDRN Portal Science Data
         url: https://edrn.nci.nih.gov/data-and-resources/data/#c0=20&b_start=20
         assignees:
             - nutjob4life
-        # New wildcard certs broke GitHub Actions SSL
-        __dangerous__disable_verify_peer: true           
     -
         name: 📃 EDRN Portal Protocol
         url: https://edrn.nci.nih.gov/data-and-resources/protocols/493-heds-reference-set-application-amit-singal-utsw-2021-prognostic-liver-secretome-signature-validation/
         __dangerous__body_down: "Unauthorized"
         assignees:
             - nutjob4life
-        # New wildcard certs broke GitHub Actions SSL
-        __dangerous__disable_verify_peer: true            
     -
         name: 📙 EDRN Portal Publication
         url: https://edrn.nci.nih.gov/data-and-resources/publications/35199349-a-multivariate-parametric-empirical-bayes-screening-approach-for-early-detection-of-hepatocellular-carcinoma-using-multiple-longitudinal-biomarkers/
         __dangerous__body_down: "Unauthorized"
         assignees:
             - nutjob4life
-        # New wildcard certs broke GitHub Actions SSL
-        __dangerous__disable_verify_peer: true            
     -
         name: 🏥 EDRN Portal Site
         url: https://edrn.nci.nih.gov/about-edrn/sites-rdf/877-baylor-college-of-medicine/
         __dangerous__body_down: "Unauthorized"
         assignees:
             - nutjob4life
-        # New wildcard certs broke GitHub Actions SSL
-        __dangerous__disable_verify_peer: true            
     -
         name: 🔬 EDRN LabCAS
         url: https://edrn-labcas.jpl.nasa.gov/
