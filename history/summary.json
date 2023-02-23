@@ -101,8 +101,8 @@
     "slug": "ml-serve",
     "status": "down",
     "uptime": "74.92%",
-    "uptimeDay": "3.88%",
-    "uptimeWeek": "86.14%",
+    "uptimeDay": "3.81%",
+    "uptimeWeek": "86.13%",
     "uptimeMonth": "74.92%",
     "uptimeYear": "74.92%",
     "time": 264,
@@ -111,7 +111,7 @@
     "timeMonth": 264,
     "timeYear": 264,
     "dailyMinutesDown": {
-      "2023-02-23": 1228,
+      "2023-02-23": 1229,
       "2023-02-22": 156,
       "2023-02-17": 13,
       "2023-02-10": 12,
@@ -181,18 +181,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/edrn.nci.nih.gov.ico",
     "slug": "edrn-portal-login-ic-user",
     "status": "down",
-    "uptime": "4.18%",
-    "uptimeDay": "4.18%",
-    "uptimeWeek": "4.18%",
-    "uptimeMonth": "4.18%",
-    "uptimeYear": "4.18%",
+    "uptime": "1.70%",
+    "uptimeDay": "1.70%",
+    "uptimeWeek": "1.70%",
+    "uptimeMonth": "1.70%",
+    "uptimeYear": "1.70%",
     "time": 674,
     "timeDay": 674,
     "timeWeek": 674,
     "timeMonth": 674,
     "timeYear": 674,
     "dailyMinutesDown": {
-      "2023-02-23": 1
+      "2023-02-23": 2
     }
   },
   {
