@@ -71,13 +71,6 @@ sites:
         assignees:
             - nutjob4life
     -
-       name: 🚪 EDRN Portal Login (IC user)
-       url: https://edrn.nci.nih.gov/authentication-test
-       headers:
-           - "Authorization: Basic $EDRN_BASIC_AUTH"
-       assignees:
-           - nutjob4life
-    -
        name: 🚪 EDRN Portal Login (Secure Site user)
        url: https://edrn.nci.nih.gov/authentication-test
        headers:
