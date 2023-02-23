@@ -70,16 +70,21 @@ sites:
         url: https://edrn.nci.nih.gov/
         assignees:
             - nutjob4life
-
-# New Wagtail portal doesn't support Basic auth, so this test is no good anymore
-#    -
-#        name: 🚪 EDRN Portal Login
-#        url: https://edrn.nci.nih.gov/@@personal-preferences
-#        headers:
-#            - "Authorization: Basic $EDRN_BASIC_AUTH"
-#        assignees:
-#            - nutjob4life
-    -
+   -
+       name: 🚪 EDRN Portal Login (IC user)
+       url: https://edrn.nci.nih.gov/authentication-test
+       headers:
+           - "Authorization: Basic $EDRN_BASIC_AUTH"
+       assignees:
+           - nutjob4life
+   -
+       name: 🚪 EDRN Portal Login (Secure Site user)
+       url: https://edrn.nci.nih.gov/authentication-test
+       headers:
+           - "Authorization: Basic $DMCC_BASIC_AUTH"
+       assignees:
+           - nutjob4life
+   -
         name: 🧬 EDRN Portal Biomarker
         url: https://edrn.nci.nih.gov/data-and-resources/biomarkers/4delf
         __dangerous__body_down: "Unauthorized"
