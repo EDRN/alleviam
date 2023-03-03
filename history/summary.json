@@ -116,7 +116,7 @@
     "timeMonth": 251,
     "timeYear": 261,
     "dailyMinutesDown": {
-      "2023-03-03": 1205,
+      "2023-03-03": 1206,
       "2023-03-02": 1440,
       "2023-03-01": 1440,
       "2023-02-28": 1440,
@@ -195,8 +195,8 @@
     "slug": "edrn-portal-login-secure-site-user",
     "status": "down",
     "uptime": "99.57%",
-    "uptimeDay": "99.67%",
-    "uptimeWeek": "99.51%",
+    "uptimeDay": "99.59%",
+    "uptimeWeek": "99.50%",
     "uptimeMonth": "99.57%",
     "uptimeYear": "99.57%",
     "time": 2380,
@@ -205,7 +205,7 @@
     "timeMonth": 2380,
     "timeYear": 2380,
     "dailyMinutesDown": {
-      "2023-03-03": 0,
+      "2023-03-03": 2,
       "2023-03-02": 17,
       "2023-02-26": 31
     }
