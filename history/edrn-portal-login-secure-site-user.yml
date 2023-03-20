@@ -1,7 +1,7 @@
 url: https://edrn.nci.nih.gov/authentication-test
-status: down
-code: 401
-responseTime: 422
-lastUpdated: 2023-03-20T13:40:45.014Z
+status: up
+code: 200
+responseTime: 1183
+lastUpdated: 2023-03-20T13:54:16.347Z
 startTime: Thu Feb 23 2023 20:27:35 GMT+0000 (Coordinated Universal Time)
 generator: Upptime <https://github.com/upptime/upptime>
