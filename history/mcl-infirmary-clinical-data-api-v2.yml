@@ -1,7 +1,7 @@
 url: https://mcl.jpl.nasa.gov/infirmary/v2/ping
-status: down
-code: 503
-responseTime: 173
-lastUpdated: 2023-03-30T22:33:25.607Z
+status: up
+code: 200
+responseTime: 43
+lastUpdated: 2023-03-30T22:40:02.479Z
 startTime: Fri Jul 09 2021 16:24:56 GMT+0000 (Coordinated Universal Time)
 generator: Upptime <https://github.com/upptime/upptime>
