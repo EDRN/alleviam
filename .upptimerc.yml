@@ -46,6 +46,7 @@ sites:
             - "Authorization: Basic $DMCC_BASIC_AUTH"
         assignees:
             - nutjob4life
+            - asitang
     -
         name: 🔑 DMCC Password Verification
         url: https://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx?WSDL
