@@ -1,7 +1,7 @@
 url: https://edrn-labcas.jpl.nasa.gov/mlserve/alphan/train
-status: down
-code: 502
-responseTime: 114
-lastUpdated: 2023-05-13T07:01:21.563Z
+status: up
+code: 200
+responseTime: 9156
+lastUpdated: 2023-05-13T07:15:21.079Z
 startTime: Mon Jan 30 2023 21:48:27 GMT+0000 (Coordinated Universal Time)
 generator: Upptime <https://github.com/upptime/upptime>
