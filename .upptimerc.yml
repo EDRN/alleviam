@@ -86,7 +86,7 @@ sites:
             - nutjob4life
     -
         name: 🔬 EDRN Portal Science Data
-        url: https://edrn.nci.nih.gov/data-and-resources/data/#c0=20&b_start=20
+        url: https://edrn.nci.nih.gov/data-and-resources/data/
         assignees:
             - nutjob4life
     -
