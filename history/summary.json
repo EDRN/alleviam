@@ -107,11 +107,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/edrn-labcas.jpl.nasa.gov.ico",
     "slug": "ml-serve",
     "status": "up",
-    "uptime": "80.46%",
+    "uptime": "80.47%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "99.66%",
     "uptimeMonth": "99.68%",
-    "uptimeYear": "80.46%",
+    "uptimeYear": "80.47%",
     "time": 2789,
     "timeDay": 0,
     "timeWeek": 3448,
@@ -493,8 +493,7 @@
       "2022-10-31": 30,
       "2022-08-22": 5,
       "2022-08-15": 24,
-      "2022-08-12": 13,
-      "2022-07-15": 6
+      "2022-08-12": 13
     }
   },
   {
