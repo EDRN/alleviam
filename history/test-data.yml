@@ -1,7 +1,7 @@
 url: https://raw.githubusercontent.com/EDRN/test-data/main/etc/passwords.cfg
-status: down
-code: 503
-responseTime: 15213
-lastUpdated: 2023-09-05T04:51:55.371Z
+status: up
+code: 200
+responseTime: 10567
+lastUpdated: 2023-09-05T04:57:10.043Z
 startTime: 2022-01-13T22:59:29.000Z
 generator: Upptime <https://github.com/upptime/upptime>
