@@ -1,7 +1,7 @@
 url: https://mcl.jpl.nasa.gov/infirmary/v2/hello/world
-status: down
-code: 500
-responseTime: 495
-lastUpdated: 2023-09-20T18:12:44.164Z
+status: up
+code: 200
+responseTime: 525
+lastUpdated: 2023-09-20T18:35:28.251Z
 startTime: 2021-07-09T15:32:15.000Z
 generator: Upptime <https://github.com/upptime/upptime>
