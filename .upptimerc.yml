@@ -137,6 +137,15 @@ sites:
         __dangerous__disable_verify_peer: true
         assignees:
             - nutjob4life
+    -
+        name: 🔧🧬 Dev instance of the EDRN Focus Biomarker Database
+        url: https://cancer.jpl.nasa.gov/
+        # JPL can't issue good certificates:
+        __dangerous__disable_verify_peer: true
+        assignees:
+            - nutjob4life
+
+
 # MCL portal is no more as of 2022-07-15 —SK
 #     -
 #         name: 🚪 MCL Portal
