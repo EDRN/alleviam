@@ -67,6 +67,11 @@ sites:
         assignees:
             - nutjob4life
     -
+        name: 🔬 EDRN Portal 13th Science Meetin
+        url: https://edrn.nci.nih.gov/news-and-events/upcoming-meetings/13th-scientific-workshop/
+        assignees:
+            - nutjob4life
+    -
         name: 🚪 EDRN Portal
         url: https://edrn.nci.nih.gov/
         assignees:
