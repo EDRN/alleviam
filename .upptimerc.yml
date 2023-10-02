@@ -7,20 +7,6 @@ repo: alleviam
 
 sites:
     -
-        # We don't have a way to do ldaps: queries but we can use a service that requires LDAP
-        # authorization. The MCL_BASIC_AUTH is the Base64 encoded HTTP Basic auth header
-        # for the MCL service account.
-        name: ℹ️ Directory Service
-        url: https://mcl.jpl.nasa.gov/infirmary/v2/hello/world
-        # JPL can't issue good certificates:
-        __dangerous__disable_verify_peer: true
-        headers:
-            - "Content-Type: application/json"
-            - "Authorization: Basic $MCL_BASIC_AUTH"
-        assignees:
-            - nutjob4life
-            - edrn-bot
-    -
         name: 🏥 DMCC SOAP Service
         url: https://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx?WSDL
         headers:
@@ -149,52 +135,8 @@ sites:
         __dangerous__disable_verify_peer: true
         assignees:
             - nutjob4life
-
-
-# MCL portal is no more as of 2022-07-15 —SK
-#     -
-#         name: 🚪 MCL Portal
-#         url: https://mcl.nci.nih.gov/
-#         assignees:
-#             - nutjob4life
-#     -
-#         name: 🚪 MCL Portal Login
-#         url: https://mcl.nci.nih.gov/@@personal-preferences
-#         headers:
-#             - "Authorization: Basic $MCL_BASIC_AUTH"
-#         assignees:
-#             - nutjob4life
-    -
-        name: 🔬 MCL LabCAS
-        url: https://mcl-labcas.jpl.nasa.gov/
-        assignees:
-            - nutjob4life
-            - yuliujpl
-    -
         name: 📚 MCL Knowledge System Database
         url: https://mcl.jpl.nasa.gov/ksdb/
-        # JPL can't issue good certificates:
-        __dangerous__disable_verify_peer: true
-        assignees:
-            - nutjob4life
-            - yuliujpl
-    -
-        name: 👩‍⚕️ MCL Infirmary Clinical Data API (v1)
-        url: https://mcl.jpl.nasa.gov/infirmary/v1/ping
-        # JPL can't issue good certificates:
-        __dangerous__disable_verify_peer: true
-        assignees:
-            - nutjob4life
-    -
-        name: 👩‍⚕️ MCL Infirmary Clinical Data API (v2)
-        url: https://mcl.jpl.nasa.gov/infirmary/v2/ping
-        # JPL can't issue good certificates:
-        __dangerous__disable_verify_peer: true
-        assignees:
-            - nutjob4life
-    -
-        name: 🧪 MCL Clinical UI
-        url: https://mcl.jpl.nasa.gov/clinical-ui/
         # JPL can't issue good certificates:
         __dangerous__disable_verify_peer: true
         assignees:
