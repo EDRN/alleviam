@@ -1,7 +1,7 @@
 url: https://edrn.nci.nih.gov/data-and-resources/data/
-status: up
-code: 200
-responseTime: 792
-lastUpdated: 2023-12-19T23:07:44.232Z
+status: down
+code: 503
+responseTime: 11
+lastUpdated: 2023-12-20T17:57:12.436Z
 startTime: 2022-03-01T15:45:15.000Z
 generator: Upptime <https://github.com/upptime/upptime>
