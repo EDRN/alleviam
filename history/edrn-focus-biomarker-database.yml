@@ -1,7 +1,7 @@
 url: https://bmdb.jpl.nasa.gov/
-status: down
-code: 503
-responseTime: 438
-lastUpdated: 2024-01-25T19:11:33.470Z
+status: up
+code: 200
+responseTime: 397
+lastUpdated: 2024-01-25T19:39:11.528Z
 startTime: 2021-07-09T15:32:22.000Z
 generator: Upptime <https://github.com/upptime/upptime>
