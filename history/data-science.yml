@@ -1,7 +1,7 @@
 url: https://datascience.jpl.nasa.gov/
-status: down
-code: 503
-responseTime: 378
-lastUpdated: 2024-01-25T19:11:41.939Z
+status: up
+code: 200
+responseTime: 419
+lastUpdated: 2024-01-25T19:39:18.871Z
 startTime: 2023-09-21T15:49:49.603Z
 generator: Upptime <https://github.com/upptime/upptime>
