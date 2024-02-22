@@ -58,12 +58,19 @@ sites:
         assignees:
             - nutjob4life
     -
-       name: 🚪 EDRN Portal Login (Secure Site user)
-       url: https://edrn.nci.nih.gov/authentication-test
-       headers:
-           - "Authorization: Basic $DMCC_BASIC_AUTH"
-       assignees:
-           - nutjob4life
+        name: ⚗️ NIST LabCAS authentication endpoint
+        url: https://labcas.jpl.nasa.gov/nist/data-access-api/auth
+        headers:
+            - "Authorization: Basic $NIST_SERVICE_BASIC_AUTH"
+        assignees:
+            - nutjob4life
+    -
+        name: 🚪 EDRN Portal Login (Secure Site user)
+        url: https://edrn.nci.nih.gov/authentication-test
+        headers:
+            - "Authorization: Basic $DMCC_BASIC_AUTH"
+        assignees:
+            - nutjob4life
     -
         name: 🧬 EDRN Portal Biomarker
         url: https://edrn.nci.nih.gov/data-and-resources/biomarkers/4delf
