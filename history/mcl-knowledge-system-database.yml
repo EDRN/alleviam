@@ -1,7 +1,7 @@
 url: https://mcl.jpl.nasa.gov/ksdb/
-status: down
-code: 500
-responseTime: 232
-lastUpdated: 2024-02-28T21:42:23.764Z
+status: up
+code: 200
+responseTime: 4198
+lastUpdated: 2024-02-28T22:45:45.268Z
 startTime: 2021-07-09T15:32:24.000Z
 generator: Upptime <https://github.com/upptime/upptime>
