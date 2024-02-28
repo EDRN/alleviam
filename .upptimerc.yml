@@ -65,6 +65,20 @@ sites:
         assignees:
             - nutjob4life
     -
+        name: ⚗️ EDRN LabCAS authentication endpoint
+        url: https://edrn-labcas.jpl.nasa.gov/data-access-api/auth
+        headers:
+            - "Authorization: Basic $EDRN_SERVICE_BASIC_AUTH"
+        assignees:
+            - nutjob4life
+    -
+        name: ⚗️ MCL LabCAS authentication endpoint
+        url: https://mcl-labcas.jpl.nasa.gov/data-access-api/auth
+        headers:
+            - "Authorization: Basic $MCL_SERVICE_BASIC_AUTH"
+        assignees:
+            - nutjob4life
+    -
         name: 🚪 EDRN Portal Login (Secure Site user)
         url: https://edrn.nci.nih.gov/authentication-test
         headers:
