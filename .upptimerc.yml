@@ -24,15 +24,17 @@ sites:
         assignees:
             - nutjob4life
             - edrn-bot
-    -
-        name: 🧠 ML Serve
-        url: https://edrn-labcas.jpl.nasa.gov/mlserve/alphan/train
-        __dangerous__disable_verify_peer: true
-        headers:
-            - "Authorization: Basic $DMCC_BASIC_AUTH"
-        assignees:
-            - nutjob4life
-            - asitang
+# No one uses this and it's been down since 2024-01-06, so commenting it out
+# as of 2024-05-03.
+#    -
+#        name: 🧠 ML Serve
+#        url: https://edrn-labcas.jpl.nasa.gov/mlserve/alphan/train
+#        __dangerous__disable_verify_peer: true
+#        headers:
+#            - "Authorization: Basic $DMCC_BASIC_AUTH"
+#        assignees:
+#            - nutjob4life
+#            - asitang
     -
         name: 🔑 DMCC Password Verification
         url: https://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx?WSDL
