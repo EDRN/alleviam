@@ -174,18 +174,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/edrn.nci.nih.gov.ico",
     "slug": "edrn-portal-login-secure-site-user",
     "status": "up",
-    "uptime": "97.57%",
-    "uptimeDay": "99.02%",
-    "uptimeWeek": "99.78%",
-    "uptimeMonth": "83.65%",
-    "uptimeYear": "97.48%",
+    "uptime": "97.56%",
+    "uptimeDay": "93.31%",
+    "uptimeWeek": "98.96%",
+    "uptimeMonth": "83.47%",
+    "uptimeYear": "97.47%",
     "time": 1841,
     "timeDay": 0,
     "timeWeek": 996,
     "timeMonth": 2235,
     "timeYear": 1898,
     "dailyMinutesDown": {
-      "2024-06-14": 14,
+      "2024-06-15": 49,
+      "2024-06-14": 48,
       "2024-06-11": 8,
       "2024-06-05": 1333,
       "2024-06-04": 1440,
@@ -307,8 +308,7 @@
       "2023-06-30": 10,
       "2023-06-26": 998,
       "2023-06-25": 1440,
-      "2023-06-24": 1069,
-      "2023-06-16": 10
+      "2023-06-24": 1069
     }
   },
   {
