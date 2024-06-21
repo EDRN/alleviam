@@ -1,7 +1,7 @@
 url: https://edrn.nci.nih.gov/data-and-resources/protocols/493-heds-reference-set-application-amit-singal-utsw-2021-prognostic-liver-secretome-signature-validation/
-status: down
-code: 403
-responseTime: 9
-lastUpdated: 2024-06-21T19:34:55.631Z
+status: up
+code: 200
+responseTime: 130
+lastUpdated: 2024-06-21T19:41:36.129Z
 startTime: 2022-03-01T15:45:15.000Z
 generator: Upptime <https://github.com/upptime/upptime>
