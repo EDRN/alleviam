@@ -1,7 +1,7 @@
 url: https://edrn.jpl.nasa.gov/cancerdataexpo/
-status: down
-code: 500
-responseTime: 239
-lastUpdated: 2024-08-06T21:13:25.991Z
+status: up
+code: 200
+responseTime: 145
+lastUpdated: 2024-08-06T21:31:04.692Z
 startTime: 2021-07-09T15:32:18.000Z
 generator: Upptime <https://github.com/upptime/upptime>
