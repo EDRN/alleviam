@@ -1,7 +1,7 @@
 url: https://edrn.nci.nih.gov/
-status: down
-code: 503
-responseTime: 85
-lastUpdated: 2024-09-24T23:11:11.071Z
+status: up
+code: 200
+responseTime: 140
+lastUpdated: 2024-09-24T23:28:23.197Z
 startTime: 2021-07-09T14:51:32.000Z
 generator: Upptime <https://github.com/upptime/upptime>
