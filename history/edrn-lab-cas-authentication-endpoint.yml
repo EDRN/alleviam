@@ -1,7 +1,7 @@
 url: https://edrn-labcas.jpl.nasa.gov/data-access-api/auth
-status: down
-code: 503
-responseTime: 331
-lastUpdated: 2024-11-12T23:11:16.386Z
+status: up
+code: 200
+responseTime: 513
+lastUpdated: 2024-11-12T23:24:01.079Z
 startTime: 2024-02-28T21:42:15.713Z
 generator: Upptime <https://github.com/upptime/upptime>
