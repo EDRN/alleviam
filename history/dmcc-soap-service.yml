@@ -1,7 +1,7 @@
 url: https://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx?WSDL
-status: down
-code: 0
-responseTime: 0
-lastUpdated: 2024-12-01T07:52:03.310Z
+status: up
+code: 200
+responseTime: 553
+lastUpdated: 2024-12-01T07:58:18.289Z
 startTime: 2021-07-09T15:32:16.000Z
 generator: Upptime <https://github.com/upptime/upptime>
