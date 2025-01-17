@@ -1,7 +1,7 @@
 url: https://labcas.jpl.nasa.gov/nist/data-access-api/auth
-status: down
-code: 502
-responseTime: 887
-lastUpdated: 2025-01-17T03:21:29.248Z
+status: up
+code: 200
+responseTime: 1221
+lastUpdated: 2025-01-17T03:33:37.970Z
 startTime: 2024-02-22T21:46:08.311Z
 generator: Upptime <https://github.com/upptime/upptime>
