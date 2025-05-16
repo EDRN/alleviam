@@ -359,7 +359,7 @@
     "timeMonth": 2209,
     "timeYear": 2337,
     "dailyMinutesDown": {
-      "2025-05-16": 828,
+      "2025-05-16": 835,
       "2025-05-15": 1440,
       "2025-05-14": 1440,
       "2025-05-13": 1440,
@@ -921,19 +921,19 @@
     "url": "https://raw.githubusercontent.com/EDRN/test-data/main/etc/passwords.cfg",
     "icon": "https://icons.duckduckgo.com/ip3/raw.githubusercontent.com.ico",
     "slug": "test-data",
-    "status": "down",
+    "status": "up",
     "uptime": "99.99%",
-    "uptimeDay": "99.94%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.55%",
+    "uptimeWeek": "99.94%",
+    "uptimeMonth": "99.99%",
     "uptimeYear": "100.00%",
-    "time": 109,
-    "timeDay": 142,
-    "timeWeek": 145,
-    "timeMonth": 148,
+    "time": 110,
+    "timeDay": 149,
+    "timeWeek": 147,
+    "timeMonth": 149,
     "timeYear": 115,
     "dailyMinutesDown": {
-      "2025-05-16": 1
+      "2025-05-16": 7
     }
   },
   {
