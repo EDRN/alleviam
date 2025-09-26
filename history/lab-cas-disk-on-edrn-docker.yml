@@ -1,7 +1,7 @@
 url: https://edrn-labcas.jpl.nasa.gov/biokey/labcas-disk/
-status: down
-code: 404
-responseTime: 43
-lastUpdated: 2025-09-26T13:27:15.069Z
+status: up
+code: 200
+responseTime: 54
+lastUpdated: 2025-09-26T14:10:25.818Z
 startTime: 2025-08-01T20:13:37.477Z
 generator: Upptime <https://github.com/upptime/upptime>
