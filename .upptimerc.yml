@@ -66,6 +66,7 @@ sites:
             </soap:Envelope>
         assignees:
             - nutjob4life
+    # This should always be up!
     -
         name: 🚪 EDRN Portal
         url: https://edrn.nci.nih.gov/
