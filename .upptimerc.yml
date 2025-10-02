@@ -11,11 +11,13 @@ sites:
         url: https://edrn-labcas.jpl.nasa.gov/biokey/
         assignees:
             - nutjob4life
-    -
-        name: 💾🚢 LabCAS Disk on edrn-docker
-        url: https://edrn-labcas.jpl.nasa.gov/biokey/labcas-disk/
-        assignees:
-            - nutjob4life
+# No longer needed; the apps on edrn-docker that need the labcas-disk
+# now use nfs mounts from within their docker-compose.yaml files
+#    -
+#        name: 💾🚢 LabCAS Disk on edrn-docker
+#        url: https://edrn-labcas.jpl.nasa.gov/biokey/labcas-disk/
+#        assignees:
+#            - nutjob4life
     -
         name: 🏥 DMCC SOAP Service
         url: https://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx?WSDL
