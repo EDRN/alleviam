@@ -159,16 +159,16 @@
     "url": "https://labcas.jpl.nasa.gov/nist/data-access-api/auth",
     "icon": "https://icons.duckduckgo.com/ip3/labcas.jpl.nasa.gov.ico",
     "slug": "nist-lab-cas-authentication-endpoint",
-    "status": "up",
+    "status": "down",
     "uptime": "99.75%",
-    "uptimeDay": "97.55%",
+    "uptimeDay": "97.53%",
     "uptimeWeek": "99.07%",
-    "uptimeMonth": "99.50%",
+    "uptimeMonth": "99.49%",
     "uptimeYear": "99.54%",
     "time": 1096,
-    "timeDay": 1028,
-    "timeWeek": 1085,
-    "timeMonth": 1061,
+    "timeDay": 1063,
+    "timeWeek": 1091,
+    "timeMonth": 1063,
     "timeYear": 1097,
     "dailyMinutesDown": {
       "2025-12-16": 35,
@@ -256,8 +256,7 @@
       "2025-03-10": 6,
       "2025-03-08": 21,
       "2025-03-01": 15,
-      "2025-02-27": 7,
-      "2025-02-20": 7
+      "2025-02-27": 7
     }
   },
   {
@@ -1029,7 +1028,7 @@
     "icon": "https://icons.duckduckgo.com/ip3/datascience.jpl.nasa.gov.ico",
     "slug": "data-science",
     "status": "up",
-    "uptime": "96.50%",
+    "uptime": "96.51%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.89%",
