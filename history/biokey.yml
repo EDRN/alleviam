@@ -1,7 +1,7 @@
 url: https://edrn-labcas.jpl.nasa.gov/biokey/
-status: down
-code: 503
-responseTime: 619
-lastUpdated: 2026-01-22T19:13:43.561Z
+status: up
+code: 200
+responseTime: 918
+lastUpdated: 2026-01-22T20:17:42.865Z
 startTime: 2025-02-10T17:54:55.465Z
 generator: Upptime <https://github.com/upptime/upptime>
