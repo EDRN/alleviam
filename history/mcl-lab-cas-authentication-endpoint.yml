@@ -1,7 +1,7 @@
 url: https://mcl-labcas.jpl.nasa.gov/data-access-api/auth
-status: down
-code: 503
-responseTime: 320
-lastUpdated: 2026-01-28T21:59:15.422Z
+status: up
+code: 200
+responseTime: 516
+lastUpdated: 2026-01-28T22:28:46.165Z
 startTime: 2024-02-28T21:42:16.492Z
 generator: Upptime <https://github.com/upptime/upptime>
