@@ -69,7 +69,7 @@ sites:
     # This should always be up!
     -
         name: 🚪 EDRN Portal
-        url: https://edrn.nci.nih.gov/
+        url: https://edrn.cancer.gov/
         assignees:
             - nutjob4life
     -
@@ -99,31 +99,31 @@ sites:
             - nutjob4life
     -
         name: 🚪 EDRN Portal Login (Secure Site user)
-        url: https://edrn.nci.nih.gov/authentication-test
+        url: https://edrn.cancer.gov/authentication-test
         headers:
             - "Authorization: Basic $DMCC_BASIC_AUTH"
         assignees:
             - nutjob4life
     -
         name: 🧬 EDRN Portal Biomarker
-        url: https://edrn.nci.nih.gov/data-and-resources/biomarkers/4delf
+        url: https://edrn.cancer.gov/data-and-resources/biomarkers/4delf
         __dangerous__body_down: "Unauthorized"
         assignees:
             - nutjob4life
     -
         name: 🔬 EDRN Portal Science Data
-        url: https://edrn.nci.nih.gov/data-and-resources/data/
+        url: https://edrn.cancer.gov/data-and-resources/data/
         assignees:
             - nutjob4life
     -
         name: 📃 EDRN Portal Protocol
-        url: https://edrn.nci.nih.gov/data-and-resources/protocols/493-heds-reference-set-application-amit-singal-utsw-2021-prognostic-liver-secretome-signature-validation/
+        url: https://edrn.cancer.gov/data-and-resources/protocols/493-heds-reference-set-application-amit-singal-utsw-2021-prognostic-liver-secretome-signature-validation/
         __dangerous__body_down: "Unauthorized"
         assignees:
             - nutjob4life
     -
         name: 📙 EDRN Portal Publication
-        url: https://edrn.nci.nih.gov/data-and-resources/publications/35199349-875-a-multivariate-parametric-empirical-bayes-screening-approach-for-early-detection-of-hepatocellular-carcinoma-using-multiple-longitudinal-biomarkers/
+        url: https://edrn.cancer.gov/data-and-resources/publications/35199349-875-a-multivariate-parametric-empirical-bayes-screening-approach-for-early-detection-of-hepatocellular-carcinoma-using-multiple-longitudinal-biomarkers/
         __dangerous__body_down: "Unauthorized"
         assignees:
             - nutjob4life
