@@ -167,12 +167,16 @@ sites:
         url: https://raw.githubusercontent.com/EDRN/test-data/main/etc/passwords.cfg
         assignees:
             - nutjob4life
-    -
-        name: 💽🔭 Data Science
-        url: https://datascience.jpl.nasa.gov/
-        __dangerous__disable_verify_peer: true
-        assignees:
-            - nutjob4life
+
+# 2026-04-23: the content at datascience.jpl.nasa.gov is being migrated to
+# www.jpl.nasa.gov and this hostname will be taken over by the main JPL web
+# group to put in a redirection. We don't need to monitor this anymore.
+#    -
+#        name: 💽🔭 Data Science
+#        url: https://datascience.jpl.nasa.gov/
+#        __dangerous__disable_verify_peer: true
+#        assignees:
+#            - nutjob4life
 
 status-website:
     # We do not have a custom domain, so leave `cname` blank:
