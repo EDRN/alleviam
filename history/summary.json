@@ -9,7 +9,7 @@
     "uptimeDay": "85.85%",
     "uptimeWeek": "93.17%",
     "uptimeMonth": "94.76%",
-    "uptimeYear": "97.93%",
+    "uptimeYear": "97.96%",
     "time": 268,
     "timeDay": 174,
     "timeWeek": 193,
@@ -52,11 +52,11 @@
     "url": "https://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx?WSDL",
     "icon": "https://icons.duckduckgo.com/ip3/www.compass.fhcrc.org.ico",
     "slug": "dmcc-soap-service",
-    "status": "up",
+    "status": "down",
     "uptime": "99.78%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.57%",
+    "uptimeWeek": "99.94%",
+    "uptimeMonth": "99.99%",
     "uptimeYear": "99.24%",
     "time": 504,
     "timeDay": 3458,
@@ -71,7 +71,8 @@
       "2025-06-29": 7,
       "2025-12-07": 6,
       "2025-12-14": 161,
-      "2026-03-08": 37
+      "2026-03-08": 37,
+      "2026-06-06": 6
     }
   },
   {
@@ -79,10 +80,10 @@
     "url": "https://www.compass.fhcrc.org/edrn_ws/ws_newcompass.asmx?WSDL",
     "icon": "https://icons.duckduckgo.com/ip3/www.compass.fhcrc.org.ico",
     "slug": "dmcc-password-verification",
-    "status": "up",
+    "status": "down",
     "uptime": "99.78%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.90%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.25%",
     "time": 92,
@@ -96,7 +97,8 @@
       "2025-06-15": 1371,
       "2025-06-22": 16,
       "2025-06-29": 6,
-      "2025-12-14": 160
+      "2025-12-14": 160,
+      "2026-06-06": 1
     }
   },
   {
@@ -294,17 +296,17 @@
     "url": "https://edrn.cancer.gov/authentication-test",
     "icon": "https://icons.duckduckgo.com/ip3/edrn.cancer.gov.ico",
     "slug": "edrn-portal-login-secure-site-user",
-    "status": "up",
+    "status": "down",
     "uptime": "82.52%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.96%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "99.75%",
-    "uptimeYear": "75.24%",
-    "time": 1744,
-    "timeDay": 1097,
-    "timeWeek": 1276,
-    "timeMonth": 1250,
-    "timeYear": 1616,
+    "uptimeYear": "75.27%",
+    "time": 1760,
+    "timeDay": 6124,
+    "timeWeek": 2510,
+    "timeMonth": 1541,
+    "timeYear": 1639,
     "dailyMinutesDown": {
       "2025-08-01": 1235,
       "2025-07-31": 1440,
@@ -422,7 +424,8 @@
       "2026-03-14": 296,
       "2026-03-21": 251,
       "2026-04-25": 201,
-      "2026-05-16": 108
+      "2026-05-16": 108,
+      "2026-06-06": 1
     }
   },
   {
@@ -614,7 +617,7 @@
     "uptimeDay": "89.91%",
     "uptimeWeek": "94.38%",
     "uptimeMonth": "95.04%",
-    "uptimeYear": "98.39%",
+    "uptimeYear": "98.42%",
     "time": 359,
     "timeDay": 203,
     "timeWeek": 239,
