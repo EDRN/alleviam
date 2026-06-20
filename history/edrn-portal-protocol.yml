@@ -1,7 +1,7 @@
 url: https://edrn.cancer.gov/data-and-resources/protocols/493-heds-reference-set-application-amit-singal-utsw-2021-prognostic-liver-secretome-signature-validation/
-status: up
-code: 200
-responseTime: 327
-lastUpdated: 2026-06-20T00:02:47.336Z
+status: down
+code: 503
+responseTime: 156
+lastUpdated: 2026-06-20T09:32:36.994Z
 startTime: 2022-03-01T15:45:15.000Z
 generator: Upptime <https://github.com/upptime/upptime>
