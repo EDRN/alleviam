@@ -4,16 +4,16 @@
     "url": "https://edrn-labcas.jpl.nasa.gov/biokey/",
     "icon": "https://icons.duckduckgo.com/ip3/edrn-labcas.jpl.nasa.gov.ico",
     "slug": "biokey",
-    "status": "down",
-    "uptime": "97.82%",
-    "uptimeDay": "89.28%",
-    "uptimeWeek": "86.00%",
-    "uptimeMonth": "94.13%",
-    "uptimeYear": "98.46%",
+    "status": "up",
+    "uptime": "97.81%",
+    "uptimeDay": "83.59%",
+    "uptimeWeek": "85.18%",
+    "uptimeMonth": "93.94%",
+    "uptimeYear": "98.45%",
     "time": 263,
-    "timeDay": 167,
-    "timeWeek": 239,
-    "timeMonth": 199,
+    "timeDay": 180,
+    "timeWeek": 237,
+    "timeMonth": 200,
     "timeYear": 255,
     "dailyMinutesDown": {
       "2025-09-25": 879,
@@ -48,7 +48,7 @@
       "2026-06-22": 323,
       "2026-06-26": 1037,
       "2026-06-25": 220,
-      "2026-07-02": 155
+      "2026-07-02": 237
     }
   },
   {
@@ -306,7 +306,7 @@
     "uptimeDay": "100.00%",
     "uptimeWeek": "98.20%",
     "uptimeMonth": "99.06%",
-    "uptimeYear": "82.29%",
+    "uptimeYear": "82.31%",
     "time": 1717,
     "timeDay": 1123,
     "timeWeek": 1396,
@@ -605,16 +605,16 @@
     "url": "https://bmdb.jpl.nasa.gov/",
     "icon": "https://icons.duckduckgo.com/ip3/bmdb.jpl.nasa.gov.ico",
     "slug": "edrn-focus-biomarker-database",
-    "status": "down",
-    "uptime": "99.29%",
-    "uptimeDay": "91.27%",
-    "uptimeWeek": "86.28%",
-    "uptimeMonth": "94.67%",
-    "uptimeYear": "98.93%",
+    "status": "up",
+    "uptime": "99.28%",
+    "uptimeDay": "85.62%",
+    "uptimeWeek": "85.48%",
+    "uptimeMonth": "94.48%",
+    "uptimeYear": "98.92%",
     "time": 348,
-    "timeDay": 222,
-    "timeWeek": 212,
-    "timeMonth": 220,
+    "timeDay": 234,
+    "timeWeek": 217,
+    "timeMonth": 221,
     "timeYear": 331,
     "dailyMinutesDown": {
       "2025-09-24": 15,
@@ -646,7 +646,7 @@
       "2026-06-22": 294,
       "2026-06-26": 1037,
       "2026-06-25": 219,
-      "2026-07-02": 126
+      "2026-07-02": 207
     }
   },
   {
@@ -654,16 +654,16 @@
     "url": "https://cancer.jpl.nasa.gov/",
     "icon": "https://icons.duckduckgo.com/ip3/cancer.jpl.nasa.gov.ico",
     "slug": "dev-instance-of-the-edrn-focus-biomarker-database",
-    "status": "down",
+    "status": "up",
     "uptime": "99.19%",
-    "uptimeDay": "91.61%",
-    "uptimeWeek": "86.34%",
-    "uptimeMonth": "94.76%",
-    "uptimeYear": "98.74%",
+    "uptimeDay": "85.97%",
+    "uptimeWeek": "85.53%",
+    "uptimeMonth": "94.57%",
+    "uptimeYear": "98.72%",
     "time": 236,
-    "timeDay": 204,
-    "timeWeek": 202,
-    "timeMonth": 200,
+    "timeDay": 222,
+    "timeWeek": 208,
+    "timeMonth": 202,
     "timeYear": 230,
     "dailyMinutesDown": {
       "2025-09-24": 15,
@@ -697,7 +697,7 @@
       "2026-06-22": 289,
       "2026-06-26": 1038,
       "2026-06-25": 219,
-      "2026-07-02": 121
+      "2026-07-02": 202
     }
   },
   {
