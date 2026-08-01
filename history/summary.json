@@ -4,15 +4,15 @@
     "url": "https://edrn-labcas.jpl.nasa.gov/biokey/",
     "icon": "https://icons.duckduckgo.com/ip3/edrn-labcas.jpl.nasa.gov.ico",
     "slug": "biokey",
-    "status": "up",
-    "uptime": "97.22%",
+    "status": "down",
+    "uptime": "97.08%",
     "uptimeDay": "0.00%",
-    "uptimeWeek": "70.35%",
-    "uptimeMonth": "87.00%",
-    "uptimeYear": "97.41%",
-    "time": 256,
+    "uptimeWeek": "60.33%",
+    "uptimeMonth": "84.39%",
+    "uptimeYear": "97.19%",
+    "time": 257,
     "timeDay": 171,
-    "timeWeek": 169,
+    "timeWeek": 157,
     "timeMonth": 196,
     "timeYear": 247,
     "dailyMinutesDown": {
@@ -64,7 +64,7 @@
       "2026-07-23": 41,
       "2026-07-25": 130,
       "2026-07-29": 54,
-      "2026-08-01": 130,
+      "2026-08-01": 1270,
       "2026-07-31": 1440,
       "2026-07-30": 1234
     }
@@ -107,7 +107,7 @@
     "timeDay": 191,
     "timeWeek": 252,
     "timeMonth": 303,
-    "timeYear": 150,
+    "timeYear": 151,
     "dailyMinutesDown": {
       "2025-12-14": 160,
       "2026-06-06": 58
@@ -153,17 +153,17 @@
     "url": "https://labcas.jpl.nasa.gov/nist/data-access-api/auth",
     "icon": "https://icons.duckduckgo.com/ip3/labcas.jpl.nasa.gov.ico",
     "slug": "nist-lab-cas-authentication-endpoint",
-    "status": "up",
-    "uptime": "99.46%",
+    "status": "down",
+    "uptime": "99.37%",
     "uptimeDay": "0.00%",
-    "uptimeWeek": "70.55%",
-    "uptimeMonth": "90.67%",
-    "uptimeYear": "98.73%",
+    "uptimeWeek": "60.43%",
+    "uptimeMonth": "88.07%",
+    "uptimeYear": "98.51%",
     "time": 1052,
     "timeDay": 969,
-    "timeWeek": 949,
+    "timeWeek": 936,
     "timeMonth": 947,
-    "timeYear": 1038,
+    "timeYear": 1037,
     "dailyMinutesDown": {
       "2025-08-02": 13,
       "2025-08-03": 34,
@@ -238,7 +238,7 @@
       "2026-07-23": 102,
       "2026-07-25": 120,
       "2026-07-29": 49,
-      "2026-08-01": 130,
+      "2026-08-01": 1271,
       "2026-07-31": 1440,
       "2026-07-30": 1229
     }
@@ -248,17 +248,17 @@
     "url": "https://edrn-labcas.jpl.nasa.gov/data-access-api/auth",
     "icon": "https://icons.duckduckgo.com/ip3/edrn-labcas.jpl.nasa.gov.ico",
     "slug": "edrn-lab-cas-authentication-endpoint",
-    "status": "up",
+    "status": "down",
     "uptime": "98.61%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "98.46%",
-    "uptimeMonth": "97.27%",
-    "uptimeYear": "99.31%",
-    "time": 438,
+    "uptimeDay": "97.93%",
+    "uptimeWeek": "99.26%",
+    "uptimeMonth": "97.20%",
+    "uptimeYear": "99.30%",
+    "time": 439,
     "timeDay": 302,
-    "timeWeek": 332,
+    "timeWeek": 301,
     "timeMonth": 386,
-    "timeYear": 463,
+    "timeYear": 464,
     "dailyMinutesDown": {
       "2025-09-25": 284,
       "2025-09-24": 405,
@@ -291,7 +291,8 @@
       "2026-07-19": 185,
       "2026-07-23": 96,
       "2026-07-25": 111,
-      "2026-07-29": 45
+      "2026-07-29": 45,
+      "2026-08-01": 30
     }
   },
   {
@@ -299,15 +300,15 @@
     "url": "https://mcl-labcas.jpl.nasa.gov/data-access-api/auth",
     "icon": "https://icons.duckduckgo.com/ip3/mcl-labcas.jpl.nasa.gov.ico",
     "slug": "mcl-lab-cas-authentication-endpoint",
-    "status": "up",
+    "status": "down",
     "uptime": "98.46%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "98.60%",
-    "uptimeMonth": "97.00%",
-    "uptimeYear": "97.89%",
-    "time": 436,
+    "uptimeDay": "98.27%",
+    "uptimeWeek": "99.36%",
+    "uptimeMonth": "96.94%",
+    "uptimeYear": "97.88%",
+    "time": 437,
     "timeDay": 311,
-    "timeWeek": 2081,
+    "timeWeek": 309,
     "timeMonth": 669,
     "timeYear": 423,
     "dailyMinutesDown": {
@@ -347,7 +348,8 @@
       "2026-07-20": 211,
       "2026-07-23": 91,
       "2026-07-25": 101,
-      "2026-07-29": 40
+      "2026-07-29": 40,
+      "2026-08-01": 25
     }
   },
   {
@@ -356,16 +358,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/edrn.cancer.gov.ico",
     "slug": "edrn-portal-login-secure-site-user",
     "status": "up",
-    "uptime": "83.33%",
+    "uptime": "83.34%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.85%",
-    "uptimeYear": "90.31%",
+    "uptimeYear": "90.52%",
     "time": 1668,
     "timeDay": 1282,
     "timeWeek": 1429,
     "timeMonth": 1310,
-    "timeYear": 1602,
+    "timeYear": 1603,
     "dailyMinutesDown": {
       "2025-08-02": 10,
       "2025-08-03": 21,
@@ -450,7 +452,7 @@
     "timeDay": 558,
     "timeWeek": 329,
     "timeMonth": 380,
-    "timeYear": 519,
+    "timeYear": 520,
     "dailyMinutesDown": {
       "2025-08-02": 8,
       "2025-08-15": 179,
@@ -487,7 +489,7 @@
     "timeDay": 431,
     "timeWeek": 310,
     "timeMonth": 343,
-    "timeYear": 615,
+    "timeYear": 616,
     "dailyMinutesDown": {
       "2025-08-15": 179,
       "2025-08-14": 54,
@@ -517,7 +519,7 @@
     "timeDay": 370,
     "timeWeek": 235,
     "timeMonth": 255,
-    "timeYear": 312,
+    "timeYear": 313,
     "dailyMinutesDown": {
       "2025-08-15": 179,
       "2025-08-14": 63,
@@ -563,15 +565,15 @@
     "url": "https://edrn-labcas.jpl.nasa.gov/",
     "icon": "https://icons.duckduckgo.com/ip3/edrn-labcas.jpl.nasa.gov.ico",
     "slug": "edrn-lab-cas",
-    "status": "up",
+    "status": "down",
     "uptime": "99.79%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "98.75%",
-    "uptimeMonth": "97.84%",
+    "uptimeDay": "98.59%",
+    "uptimeWeek": "99.45%",
+    "uptimeMonth": "97.80%",
     "uptimeYear": "99.63%",
     "time": 178,
     "timeDay": 271,
-    "timeWeek": 284,
+    "timeWeek": 263,
     "timeMonth": 279,
     "timeYear": 167,
     "dailyMinutesDown": {
@@ -600,7 +602,8 @@
       "2026-07-19": 158,
       "2026-07-23": 21,
       "2026-07-25": 91,
-      "2026-07-29": 35
+      "2026-07-29": 35,
+      "2026-08-01": 20
     }
   },
   {
@@ -608,15 +611,15 @@
     "url": "https://edrn.jpl.nasa.gov/cancerdataexpo/",
     "icon": "https://icons.duckduckgo.com/ip3/edrn.jpl.nasa.gov.ico",
     "slug": "edrn-cancer-data-expo",
-    "status": "up",
+    "status": "down",
     "uptime": "99.78%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "98.89%",
-    "uptimeMonth": "98.05%",
+    "uptimeDay": "98.93%",
+    "uptimeWeek": "99.55%",
+    "uptimeMonth": "98.02%",
     "uptimeYear": "99.64%",
-    "time": 386,
+    "time": 387,
     "timeDay": 192,
-    "timeWeek": 237,
+    "timeWeek": 223,
     "timeMonth": 257,
     "timeYear": 367,
     "dailyMinutesDown": {
@@ -648,7 +651,8 @@
       "2026-07-19": 143,
       "2026-07-23": 16,
       "2026-07-25": 82,
-      "2026-07-29": 30
+      "2026-07-29": 30,
+      "2026-08-01": 15
     }
   },
   {
@@ -656,15 +660,15 @@
     "url": "https://bmdb.jpl.nasa.gov/",
     "icon": "https://icons.duckduckgo.com/ip3/bmdb.jpl.nasa.gov.ico",
     "slug": "edrn-focus-biomarker-database",
-    "status": "up",
+    "status": "down",
     "uptime": "99.23%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "99.03%",
-    "uptimeMonth": "94.66%",
+    "uptimeDay": "99.26%",
+    "uptimeWeek": "99.64%",
+    "uptimeMonth": "94.63%",
     "uptimeYear": "98.51%",
     "time": 333,
     "timeDay": 205,
-    "timeWeek": 212,
+    "timeWeek": 198,
     "timeMonth": 224,
     "timeYear": 315,
     "dailyMinutesDown": {
@@ -712,7 +716,8 @@
       "2026-07-19": 128,
       "2026-07-23": 12,
       "2026-07-25": 72,
-      "2026-07-29": 25
+      "2026-07-29": 25,
+      "2026-08-01": 11
     }
   },
   {
@@ -720,15 +725,15 @@
     "url": "https://cancer.jpl.nasa.gov/",
     "icon": "https://icons.duckduckgo.com/ip3/cancer.jpl.nasa.gov.ico",
     "slug": "dev-instance-of-the-edrn-focus-biomarker-database",
-    "status": "up",
+    "status": "down",
     "uptime": "99.07%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "99.18%",
-    "uptimeMonth": "94.72%",
+    "uptimeDay": "99.60%",
+    "uptimeWeek": "99.74%",
+    "uptimeMonth": "94.71%",
     "uptimeYear": "98.32%",
     "time": 230,
     "timeDay": 191,
-    "timeWeek": 184,
+    "timeWeek": 164,
     "timeMonth": 194,
     "timeYear": 224,
     "dailyMinutesDown": {
@@ -778,7 +783,8 @@
       "2026-07-19": 113,
       "2026-07-23": 72,
       "2026-07-25": 63,
-      "2026-07-29": 20
+      "2026-07-29": 20,
+      "2026-08-01": 6
     }
   },
   {
@@ -786,15 +792,15 @@
     "url": "https://mcl.jpl.nasa.gov/ksdb/",
     "icon": "https://icons.duckduckgo.com/ip3/mcl.jpl.nasa.gov.ico",
     "slug": "mcl-knowledge-system-database",
-    "status": "up",
+    "status": "down",
     "uptime": "99.60%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "99.32%",
+    "uptimeDay": "99.93%",
+    "uptimeWeek": "99.84%",
     "uptimeMonth": "98.68%",
     "uptimeYear": "99.71%",
     "time": 528,
     "timeDay": 327,
-    "timeWeek": 418,
+    "timeWeek": 384,
     "timeMonth": 492,
     "timeYear": 518,
     "dailyMinutesDown": {
@@ -826,7 +832,8 @@
       "2026-07-19": 98,
       "2026-07-23": 2,
       "2026-07-25": 53,
-      "2026-07-29": 16
+      "2026-07-29": 16,
+      "2026-08-01": 1
     }
   },
   {
