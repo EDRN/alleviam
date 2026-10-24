@@ -1,7 +1,7 @@
 url: https://edrn.cancer.gov/authentication-test
-status: up
-code: 200
-responseTime: 1539
-lastUpdated: 2026-10-24T01:18:00.775Z
+status: down
+code: 401
+responseTime: 565
+lastUpdated: 2026-10-24T06:13:09.576Z
 startTime: 2023-02-23T20:27:35.000Z
 generator: Upptime <https://github.com/upptime/upptime>
