@@ -4,14 +4,14 @@
     "url": "https://edrn-labcas.jpl.nasa.gov/biokey/",
     "icon": "https://icons.duckduckgo.com/ip3/edrn-labcas.jpl.nasa.gov.ico",
     "slug": "biokey",
-    "status": "up",
-    "uptime": "93.38%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "status": "down",
+    "uptime": "93.39%",
+    "uptimeDay": "99.95%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "79.18%",
     "uptimeYear": "90.26%",
-    "time": 240,
-    "timeDay": 118,
+    "time": 239,
+    "timeDay": 150,
     "timeWeek": 178,
     "timeMonth": 169,
     "timeYear": 223,
@@ -104,7 +104,8 @@
       "2026-10-17": 1440,
       "2026-10-16": 1440,
       "2026-10-15": 329,
-      "2026-10-22": 177
+      "2026-10-22": 177,
+      "2026-11-05": 1
     }
   },
   {
@@ -396,7 +397,7 @@
     "icon": "https://icons.duckduckgo.com/ip3/edrn.cancer.gov.ico",
     "slug": "edrn-portal-login-secure-site-user",
     "status": "up",
-    "uptime": "83.16%",
+    "uptime": "83.17%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "98.82%",
@@ -688,16 +689,16 @@
     "url": "https://bmdb.jpl.nasa.gov/",
     "icon": "https://icons.duckduckgo.com/ip3/bmdb.jpl.nasa.gov.ico",
     "slug": "edrn-focus-biomarker-database",
-    "status": "up",
+    "status": "down",
     "uptime": "98.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.91%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "79.18%",
     "uptimeYear": "91.43%",
     "time": 307,
-    "timeDay": 123,
-    "timeWeek": 210,
-    "timeMonth": 194,
+    "timeDay": 175,
+    "timeWeek": 212,
+    "timeMonth": 195,
     "timeYear": 272,
     "dailyMinutesDown": {
       "2025-11-08": 26,
@@ -784,7 +785,8 @@
       "2026-10-17": 1440,
       "2026-10-16": 1440,
       "2026-10-15": 328,
-      "2026-10-22": 177
+      "2026-10-22": 177,
+      "2026-11-05": 1
     }
   },
   {
@@ -792,16 +794,16 @@
     "url": "https://cancer.jpl.nasa.gov/",
     "icon": "https://icons.duckduckgo.com/ip3/cancer.jpl.nasa.gov.ico",
     "slug": "dev-instance-of-the-edrn-focus-biomarker-database",
-    "status": "up",
-    "uptime": "96.99%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "79.19%",
+    "status": "down",
+    "uptime": "97.00%",
+    "uptimeDay": "99.93%",
+    "uptimeWeek": "99.99%",
+    "uptimeMonth": "79.18%",
     "uptimeYear": "91.26%",
     "time": 221,
-    "timeDay": 95,
-    "timeWeek": 178,
-    "timeMonth": 163,
+    "timeDay": 168,
+    "timeWeek": 186,
+    "timeMonth": 165,
     "timeYear": 208,
     "dailyMinutesDown": {
       "2025-11-08": 25,
@@ -890,7 +892,8 @@
       "2026-10-17": 1440,
       "2026-10-16": 1440,
       "2026-10-15": 328,
-      "2026-10-22": 177
+      "2026-10-22": 177,
+      "2026-11-05": 1
     }
   },
   {
