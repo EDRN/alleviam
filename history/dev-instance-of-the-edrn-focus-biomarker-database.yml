@@ -1,7 +1,7 @@
 url: https://cancer.jpl.nasa.gov/
-status: down
-code: 503
-responseTime: 240
-lastUpdated: 2026-11-05T22:51:44.010Z
+status: up
+code: 200
+responseTime: 94
+lastUpdated: 2026-11-06T02:52:48.718Z
 startTime: 2023-09-21T17:21:16.860Z
 generator: Upptime <https://github.com/upptime/upptime>
