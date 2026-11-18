@@ -140,20 +140,24 @@ sites:
         __dangerous__disable_verify_peer: true
         assignees:
             - nutjob4life
-    -
-        name: 🧬 EDRN Focus Biomarker Database
-        url: https://bmdb.jpl.nasa.gov/
-        # JPL can't issue good certificates:
-        __dangerous__disable_verify_peer: true
-        assignees:
-            - nutjob4life
-    -
-        name: 🔧🧬 Dev instance of the EDRN Focus Biomarker Database
-        url: https://cancer.jpl.nasa.gov/
-        # JPL can't issue good certificates:
-        __dangerous__disable_verify_peer: true
-        assignees:
-            - nutjob4life
+# These are two PHP-based applications running on PHP 7.4 which reached
+# end-of-life in 2022. PHP has since had some critical CVEs but there's
+# no direct patching for these apps because of the EOL issue. Further,
+# no one actually uses these apps anymore.
+#    -
+#        name: 🧬 EDRN Focus Biomarker Database
+#        url: https://bmdb.jpl.nasa.gov/
+#        # JPL can't issue good certificates:
+#        __dangerous__disable_verify_peer: true
+#        assignees:
+#            - nutjob4life
+#    -
+#        name: 🔧🧬 Dev instance of the EDRN Focus Biomarker Database
+#        url: https://cancer.jpl.nasa.gov/
+#        # JPL can't issue good certificates:
+#        __dangerous__disable_verify_peer: true
+#        assignees:
+#            - nutjob4life
     -
         name: 📚 MCL Knowledge System Database
         url: https://mcl.jpl.nasa.gov/ksdb/
