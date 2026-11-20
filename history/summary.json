@@ -4,17 +4,17 @@
     "url": "https://edrn-labcas.jpl.nasa.gov/biokey/",
     "icon": "https://icons.duckduckgo.com/ip3/edrn-labcas.jpl.nasa.gov.ico",
     "slug": "biokey",
-    "status": "down",
-    "uptime": "93.51%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
+    "status": "up",
+    "uptime": "93.48%",
+    "uptimeDay": "78.64%",
+    "uptimeWeek": "96.95%",
     "uptimeMonth": "92.12%",
-    "uptimeYear": "90.23%",
+    "uptimeYear": "90.17%",
     "time": 236,
-    "timeDay": 152,
-    "timeWeek": 164,
-    "timeMonth": 175,
-    "timeYear": 218,
+    "timeDay": 273,
+    "timeWeek": 199,
+    "timeMonth": 187,
+    "timeYear": 219,
     "dailyMinutesDown": {
       "2025-11-21": 22,
       "2025-11-28": 9,
@@ -105,7 +105,8 @@
       "2026-10-22": 177,
       "2026-11-06": 173,
       "2026-11-05": 69,
-      "2026-11-19": 0
+      "2026-11-20": 128,
+      "2026-11-19": 179
     }
   },
   {
@@ -122,8 +123,8 @@
     "time": 480,
     "timeDay": 140,
     "timeWeek": 283,
-    "timeMonth": 325,
-    "timeYear": 473,
+    "timeMonth": 324,
+    "timeYear": 474,
     "dailyMinutesDown": {
       "2025-12-07": 6,
       "2025-12-14": 161,
@@ -145,7 +146,7 @@
     "time": 178,
     "timeDay": 109,
     "timeWeek": 216,
-    "timeMonth": 238,
+    "timeMonth": 231,
     "timeYear": 215,
     "dailyMinutesDown": {
       "2025-12-14": 160,
@@ -166,7 +167,7 @@
     "time": 458,
     "timeDay": 394,
     "timeWeek": 297,
-    "timeMonth": 277,
+    "timeMonth": 273,
     "timeYear": 382,
     "dailyMinutesDown": {
       "2025-11-23": 9,
@@ -194,10 +195,9 @@
     "time": 999,
     "timeDay": 288,
     "timeWeek": 325,
-    "timeMonth": 560,
+    "timeMonth": 553,
     "timeYear": 970,
     "dailyMinutesDown": {
-      "2025-11-20": 11,
       "2025-11-21": 21,
       "2025-11-27": 7,
       "2025-11-28": 9,
@@ -332,7 +332,7 @@
     "time": 401,
     "timeDay": 190,
     "timeWeek": 286,
-    "timeMonth": 318,
+    "timeMonth": 321,
     "timeYear": 398,
     "dailyMinutesDown": {
       "2025-11-21": 20,
@@ -390,16 +390,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/edrn.cancer.gov.ico",
     "slug": "edrn-portal-login-secure-site-user",
     "status": "up",
-    "uptime": "83.34%",
+    "uptime": "83.35%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "98.82%",
-    "uptimeYear": "87.09%",
+    "uptimeYear": "87.10%",
     "time": 1566,
     "timeDay": 1963,
     "timeWeek": 1709,
-    "timeMonth": 1516,
-    "timeYear": 1508,
+    "timeMonth": 1508,
+    "timeYear": 1497,
     "dailyMinutesDown": {
       "2025-11-22": 133,
       "2025-11-23": 68,
@@ -482,8 +482,8 @@
     "time": 450,
     "timeDay": 546,
     "timeWeek": 407,
-    "timeMonth": 337,
-    "timeYear": 276,
+    "timeMonth": 334,
+    "timeYear": 277,
     "dailyMinutesDown": {
       "2025-11-23": 20,
       "2025-12-23": 20,
@@ -508,8 +508,8 @@
     "time": 548,
     "timeDay": 448,
     "timeWeek": 370,
-    "timeMonth": 338,
-    "timeYear": 352,
+    "timeMonth": 337,
+    "timeYear": 353,
     "dailyMinutesDown": {
       "2025-11-23": 7,
       "2026-02-03": 866,
@@ -531,7 +531,7 @@
     "time": 303,
     "timeDay": 375,
     "timeWeek": 272,
-    "timeMonth": 240,
+    "timeMonth": 238,
     "timeYear": 206,
     "dailyMinutesDown": {
       "2026-02-03": 865,
@@ -553,7 +553,7 @@
     "time": 242,
     "timeDay": 332,
     "timeWeek": 277,
-    "timeMonth": 221,
+    "timeMonth": 219,
     "timeYear": 163,
     "dailyMinutesDown": {
       "2026-06-30": 162
@@ -573,7 +573,7 @@
     "time": 199,
     "timeDay": 84,
     "timeWeek": 236,
-    "timeMonth": 282,
+    "timeMonth": 287,
     "timeYear": 226,
     "dailyMinutesDown": {
       "2025-11-21": 20,
@@ -628,7 +628,7 @@
     "time": 340,
     "timeDay": 178,
     "timeWeek": 222,
-    "timeMonth": 246,
+    "timeMonth": 250,
     "timeYear": 302,
     "dailyMinutesDown": {
       "2025-11-21": 19,
@@ -686,8 +686,8 @@
     "time": 502,
     "timeDay": 271,
     "timeWeek": 386,
-    "timeMonth": 448,
-    "timeYear": 506,
+    "timeMonth": 454,
+    "timeYear": 507,
     "dailyMinutesDown": {
       "2025-11-21": 18,
       "2025-11-28": 5,
@@ -744,8 +744,8 @@
     "time": 171,
     "timeDay": 170,
     "timeWeek": 169,
-    "timeMonth": 158,
-    "timeYear": 191,
+    "timeMonth": 157,
+    "timeYear": 192,
     "dailyMinutesDown": {
       "2026-08-17": 47
     }
