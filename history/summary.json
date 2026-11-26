@@ -4,17 +4,17 @@
     "url": "https://edrn-labcas.jpl.nasa.gov/biokey/",
     "icon": "https://icons.duckduckgo.com/ip3/edrn-labcas.jpl.nasa.gov.ico",
     "slug": "biokey",
-    "status": "up",
+    "status": "down",
     "uptime": "93.54%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "96.95%",
     "uptimeMonth": "98.75%",
     "uptimeYear": "90.17%",
-    "time": 227,
-    "timeDay": 217,
-    "timeWeek": 227,
-    "timeMonth": 181,
-    "timeYear": 219,
+    "time": 234,
+    "timeDay": 181,
+    "timeWeek": 218,
+    "timeMonth": 180,
+    "timeYear": 218,
     "dailyMinutesDown": {
       "2025-11-28": 9,
       "2025-11-29": 6,
@@ -105,7 +105,8 @@
       "2026-11-06": 173,
       "2026-11-05": 69,
       "2026-11-20": 128,
-      "2026-11-19": 179
+      "2026-11-19": 179,
+      "2026-11-26": 0
     }
   },
   {
